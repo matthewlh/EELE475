@@ -238,14 +238,49 @@ architecture behavioral of DE2_Board_top_level is
    -- change end entity to end component
    ---------------------------------------------------------------
 	
-	component Nios_Qsys
-	port (
-		clk_clk                             : in  std_logic                     := '0';             --                          clk.clk
-		switches_external_connection_export : in  std_logic_vector(17 downto 0) := (others => '0'); -- switches_external_connection.export
-		leds_external_connection_export     : out std_logic_vector(17 downto 0);                    --     leds_external_connection.export
-		reset_reset_n                       : in  std_logic                     := '0'              --                        reset.reset_n
-	);
-end component Nios_Qsys;
+	component Nios_Qsys is
+        port (
+            clk_clk                             : in    std_logic                     := 'X';             -- clk
+            switches_external_connection_export : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
+            leds_external_connection_export     : out   std_logic_vector(17 downto 0);                    -- export
+            reset_reset_n                       : in    std_logic                     := 'X';             -- reset_n
+            sdram_addr                          : out   std_logic_vector(11 downto 0);                    -- addr
+            sdram_ba                            : out   std_logic_vector(1 downto 0);                     -- ba
+            sdram_cas_n                         : out   std_logic;                                        -- cas_n
+            sdram_cke                           : out   std_logic;                                        -- cke
+            sdram_cs_n                          : out   std_logic;                                        -- cs_n
+            sdram_dq                            : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+            sdram_dqm                           : out   std_logic_vector(1 downto 0);                     -- dqm
+            sdram_ras_n                         : out   std_logic;                                        -- ras_n
+            sdram_we_n                          : out   std_logic                                         -- we_n
+        );
+    end component Nios_Qsys;
+	
+	--Copyright (C) 1991-2013 Altera Corporation
+	--Your use of Altera Corporation's design tools, logic functions 
+	--and other software and tools, and its AMPP partner logic 
+	--functions, and any output files from any of the foregoing 
+	--(including device programming or simulation files), and any 
+	--associated documentation or information are expressly subject 
+	--to the terms and conditions of the Altera Program License 
+	--Subscription Agreement, Altera MegaCore Function License 
+	--Agreement, or other applicable license agreement, including, 
+	--without limitation, that your use is for the sole purpose of 
+	--programming logic devices manufactured by Altera and sold by 
+	--Altera or its authorized distributors.  Please refer to the 
+	--applicable agreement for further details.
+	component clockPLL
+		PORT
+		(
+			inclk0		: IN STD_LOGIC  := '0';
+			c0				: OUT STD_LOGIC ;
+			c1				: OUT STD_LOGIC 
+		);
+	end component;
+
+	signal dram_ba : std_logic_vector(1 downto 0); 
+	signal dram_dqm : std_logic_vector(1 downto 0); 
+	signal clk_nios : std_logic;
 
 begin
 
@@ -261,11 +296,27 @@ begin
 
     u0 : component Nios_Qsys
         port map (
-            clk_clk                             => CLOCK_50,                             --                          clk.clk
-            switches_external_connection_export => SW, -- switches_external_connection.export
-            leds_external_connection_export     => LEDR,     --     leds_external_connection.export
-            reset_reset_n                       => KEY(0)                        --                        reset.reset_n
+            clk_clk                             => clk_nios,                           --                          clk.clk
+            switches_external_connection_export => SW, 											-- switches_external_connection.export
+            leds_external_connection_export     => LEDR,     									--     leds_external_connection.export
+            reset_reset_n                       => KEY(0),                       		--                        reset.reset_n
+            sdram_addr                          => DRAM_ADDR,                          --                        sdram.addr
+            sdram_ba                            => dram_ba,                            --                             .ba
+            sdram_cas_n                         => DRAM_CAS_N,                         --                             .cas_n
+            sdram_cke                           => DRAM_CKE,                           --                             .cke
+            sdram_cs_n                          => DRAM_CS_N,                          --                             .cs_n
+            sdram_dq                            => DRAM_DQ,                            --                             .dq
+            sdram_dqm                           => dram_dqm,                           --                             .dqm
+            sdram_ras_n                         => DRAM_RAS_N,                         --                             .ras_n
+            sdram_we_n                          => DRAM_WE_N                           --                             .we_n
         );
+	  
+  clockPLL_inst : clockPLL PORT MAP (
+		inclk0	=> CLOCK_50,
+		c0	 		=> clk_nios,
+		c1	 		=> DRAM_CLK
+	);
+
 
 
    -----------------------------------------
@@ -367,18 +418,18 @@ begin
 	IRDA_TXD <= '0';  -- IRDA Transmitter		
 		
 	-- DRAM (8-Mbyte SDRAM)
-	DRAM_ADDR  <= (others => '0');  -- SDRAM Address
-	DRAM_DQ    <= (others => 'Z');  -- SDRAM Data
-	DRAM_BA_0  <= '0';                      -- SDRAM Bank Address 0
-	DRAM_BA_1  <= '0';                      -- SDRAM Bank Address 1
-	DRAM_LDQM  <= '0';                      -- SDRAM Low-byte  Data Mask
-	DRAM_UDQM  <= '0';                      -- SDRAM High-byte Data Mask
-	DRAM_RAS_N <= '0';                      -- SDRAM Row    Address Strobe
-	DRAM_CAS_N <= '0';                      -- SDRAM Column Address Strobe
-	DRAM_CKE   <= '0';                      -- SDRAM Clock Enable
-	DRAM_CLK   <= '0';                      -- SDRAM Clock 
-	DRAM_WE_N  <= '0';                      -- SDRAM Write Enable
-	DRAM_CS_N  <= '0';                      -- SDRAM Chip Select
+--	DRAM_ADDR  <= (others => '0');  -- SDRAM Address
+--	DRAM_DQ    <= (others => 'Z');  -- SDRAM Data
+	DRAM_BA_0  <= dram_ba(0);                      -- SDRAM Bank Address 0
+	DRAM_BA_1  <= dram_ba(1);                      -- SDRAM Bank Address 1
+	DRAM_LDQM  <= dram_dqm(0);                      -- SDRAM Low-byte  Data Mask
+	DRAM_UDQM  <= dram_dqm(1);                      -- SDRAM High-byte Data Mask
+--	DRAM_RAS_N <= '0';                      -- SDRAM Row    Address Strobe
+--	DRAM_CAS_N <= '0';                      -- SDRAM Column Address Strobe
+--	DRAM_CKE   <= '0';                      -- SDRAM Clock Enable
+--	DRAM_CLK   <= '0';                      -- SDRAM Clock 
+--	DRAM_WE_N  <= '0';                      -- SDRAM Write Enable
+--	DRAM_CS_N  <= '0';                      -- SDRAM Chip Select
 	
 	-- SRAM (512-Kbyte SRAM)
 	SRAM_ADDR  <= (others => '0');  -- SRAM Address

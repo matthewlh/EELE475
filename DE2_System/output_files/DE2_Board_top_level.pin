@@ -422,7 +422,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :      
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
 GPIO_0[22]                   : H19       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 VCCD_PLL2                    : H20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H21       :        :                   :         : 5         :                
+TD_CLK27                     : H21       : input  : 3.3-V LVTTL       :         : 5         : N              
 GND                          : H22       : gnd    :                   :         :           :                
 GPIO_0[16]                   : H23       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[17]                   : H24       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
@@ -444,8 +444,8 @@ VGA_B[0]                     : J13       : output : 3.3-V LVTTL       :         
 VGA_B[1]                     : J14       : output : 3.3-V LVTTL       :         : 3         : Y              
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 4         :                
-TD_CLK27                     : J17       : input  : 3.3-V LVTTL       :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : J18       :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J17       :        :                   :         : 4         :                
+AUD_ADCLRCL                  : J18       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
 GPIO_0[7]                    : J20       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[6]                    : J21       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
@@ -647,7 +647,7 @@ GND                          : U8        : gnd    :                   :         
 HEX4[0]                      : U9        : output : 3.3-V LVTTL       :         : 1         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U10       :        :                   :         : 1         :                
 VCCINT                       : U11       : power  :                   : 1.2V    :           :                
-AUD_ADCLRCL                  : U12       : output : 3.3-V LVTTL       :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U12       :        :                   :         : 8         :                
 VCCINT                       : U13       : power  :                   : 1.2V    :           :                
 VCCINT                       : U14       : power  :                   : 1.2V    :           :                
 VCCINT                       : U15       : power  :                   : 1.2V    :           :                
