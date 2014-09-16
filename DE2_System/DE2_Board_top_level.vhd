@@ -238,7 +238,7 @@ architecture behavioral of DE2_Board_top_level is
    -- change end entity to end component
    ---------------------------------------------------------------
 	
-	component Nios_Qsys is
+	 component Nios_Qsys is
         port (
             clk_clk                             : in    std_logic                     := 'X';             -- clk
             switches_external_connection_export : in    std_logic_vector(17 downto 0) := (others => 'X'); -- export
@@ -252,7 +252,11 @@ architecture behavioral of DE2_Board_top_level is
             sdram_dq                            : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
             sdram_dqm                           : out   std_logic_vector(1 downto 0);                     -- dqm
             sdram_ras_n                         : out   std_logic;                                        -- ras_n
-            sdram_we_n                          : out   std_logic                                         -- we_n
+            sdram_we_n                          : out   std_logic;                                        -- we_n
+            lcd_RS                              : out   std_logic;                                        -- RS
+            lcd_RW                              : out   std_logic;                                        -- RW
+            lcd_data                            : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
+            lcd_E                               : out   std_logic                                         -- E
         );
     end component Nios_Qsys;
 	
@@ -308,7 +312,11 @@ begin
             sdram_dq                            => DRAM_DQ,                            --                             .dq
             sdram_dqm                           => dram_dqm,                           --                             .dqm
             sdram_ras_n                         => DRAM_RAS_N,                         --                             .ras_n
-            sdram_we_n                          => DRAM_WE_N                           --                             .we_n
+            sdram_we_n                          => DRAM_WE_N,                           --                             .we_n
+				lcd_RS                              => LCD_RS,                              --                          lcd.RS
+            lcd_RW                              => LCD_RW,                              --                             .RW
+            lcd_data                            => LCD_DATA,                            --                             .data
+            lcd_E                               => LCD_EN                                --                             .E
         );
 	  
   clockPLL_inst : clockPLL PORT MAP (
@@ -341,10 +349,10 @@ begin
 	HEX7 <= (others => '1');  -- '0' turns segment ON, '1' turns segment OFF
 	
 	-- LCD Module
-	LCD_DATA <= (others => 'Z');
-	LCD_RW   <= '1';  -- '0' = Write, '1' = Read
-	LCD_EN   <= '0';  -- Enable
-	LCD_RS   <= '1';  -- Command/Data Select '0' = Command, '1' = Data
+	--LCD_DATA <= (others => 'Z');
+	--LCD_RW   <= '1';  -- '0' = Write, '1' = Read
+	--LCD_EN   <= '0';  -- Enable
+	--LCD_RS   <= '1';  -- Command/Data Select '0' = Command, '1' = Data
 	LCD_ON   <= '1';  -- LCD Power ON/OFF
 	LCD_BLON <= '1';  -- LCD Back Light ON/OFF
 	 

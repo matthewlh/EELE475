@@ -32,7 +32,7 @@
    {
       datum baseAddress
       {
-         value = "16797768";
+         value = "16781416";
          type = "String";
       }
    }
@@ -42,6 +42,14 @@
       {
          value = "0";
          type = "int";
+      }
+   }
+   element lcd_display.control_slave
+   {
+      datum baseAddress
+      {
+         value = "16781360";
+         type = "String";
       }
    }
    element cpu_nios
@@ -56,7 +64,7 @@
    {
       datum baseAddress
       {
-         value = "16795648";
+         value = "16779264";
          type = "String";
       }
    }
@@ -68,11 +76,19 @@
          type = "int";
       }
    }
+   element lcd_display
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
    element Switches.s1
    {
       datum baseAddress
       {
-         value = "16797744";
+         value = "16781392";
          type = "String";
       }
    }
@@ -88,7 +104,7 @@
    {
       datum baseAddress
       {
-         value = "16797728";
+         value = "16781376";
          type = "String";
       }
    }
@@ -115,7 +131,7 @@
  <parameter name="projectName" value="DE2_System.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1410276201348" />
+ <parameter name="timeStamp" value="1410881183073" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
@@ -135,6 +151,7 @@
    internal="sdram_controller_0.wire"
    type="conduit"
    dir="end" />
+ <interface name="lcd" internal="lcd_display.external" type="conduit" dir="end" />
  <module kind="clock_source" version="13.0" enabled="1" name="clk">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -242,8 +259,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1004800' end='0x1005000' /><slave name='LEDs.s1' start='0x1005020' end='0x1005030' /><slave name='Switches.s1' start='0x1005030' end='0x1005040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1005048' end='0x1005050' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1004800' end='0x1005000' /><slave name='LEDs.s1' start='0x1005020' end='0x1005030' /><slave name='Switches.s1' start='0x1005030' end='0x1005040' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1005048' end='0x1005050' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /><slave name='lcd_display.control_slave' start='0x1001030' end='0x1001040' /><slave name='LEDs.s1' start='0x1001040' end='0x1001050' /><slave name='Switches.s1' start='0x1001050' end='0x1001060' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1001068' end='0x1001070' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /><slave name='lcd_display.control_slave' start='0x1001030' end='0x1001040' /><slave name='LEDs.s1' start='0x1001040' end='0x1001050' /><slave name='Switches.s1' start='0x1001050' end='0x1001060' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1001068' end='0x1001070' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone II" />
   <parameter name="internalIrqMaskSystemInfo" value="1" />
@@ -341,13 +358,18 @@
   <parameter name="clockRate" value="50000000" />
   <parameter name="componentName">$${FILENAME}_sdram_controller_0</parameter>
  </module>
+ <module
+   kind="altera_avalon_lcd_16207"
+   version="13.0.1.99.2"
+   enabled="1"
+   name="lcd_display" />
  <connection
    kind="avalon"
    version="13.0"
    start="cpu_nios.instruction_master"
    end="cpu_nios.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01004800" />
+  <parameter name="baseAddress" value="0x01000800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -356,7 +378,7 @@
    start="cpu_nios.data_master"
    end="cpu_nios.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01004800" />
+  <parameter name="baseAddress" value="0x01000800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -384,7 +406,7 @@
    start="cpu_nios.instruction_master"
    end="Switches.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01005030" />
+  <parameter name="baseAddress" value="0x01001050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -393,7 +415,7 @@
    start="cpu_nios.data_master"
    end="Switches.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01005030" />
+  <parameter name="baseAddress" value="0x01001050" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -402,7 +424,7 @@
    start="cpu_nios.instruction_master"
    end="LEDs.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01005020" />
+  <parameter name="baseAddress" value="0x01001040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -411,7 +433,7 @@
    start="cpu_nios.data_master"
    end="LEDs.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01005020" />
+  <parameter name="baseAddress" value="0x01001040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -420,7 +442,7 @@
    start="cpu_nios.instruction_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01005048" />
+  <parameter name="baseAddress" value="0x01001068" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -429,7 +451,7 @@
    start="cpu_nios.data_master"
    end="jtag_uart_0.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01005048" />
+  <parameter name="baseAddress" value="0x01001068" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -466,6 +488,30 @@
    end="sdram_controller_0.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00800000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="clock" version="13.0" start="clk.clk" end="lcd_display.clk" />
+ <connection
+   kind="reset"
+   version="13.0"
+   start="clk.clk_reset"
+   end="lcd_display.reset" />
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="cpu_nios.instruction_master"
+   end="lcd_display.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="cpu_nios.data_master"
+   end="lcd_display.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x01001030" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

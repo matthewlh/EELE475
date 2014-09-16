@@ -17,7 +17,7 @@
   </columns>
  </clocktable>
  <library
-   expandedCategories="Library/Clock and Reset,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Memories and Memory Controllers,Library/Memories and Memory Controllers/External Memory Interfaces/SDRAM Interfaces,Library,Project" />
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces,Library/Clock and Reset,Library,Library/Memories and Memory Controllers/External Memory Interfaces/SDRAM Interfaces,Library/Peripherals,Library/Peripherals/Display,Library/Memories and Memory Controllers,Project" />
  <window width="1296" height="1040" x="624" y="0" />
  <hdlexample language="VHDL" />
  <generation synthesis="VHDL" path="_PROJECT_NAME_" />
