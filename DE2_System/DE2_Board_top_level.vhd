@@ -5,9 +5,9 @@
 --           	     Montana State University
 --                   Bozeman, MT  59717
 -- Modified by:      David Keltgen
--- 					 Matthew Handley
+-- 					 	Matthew Handley
 --
--- Create Date:      09/10/2010
+-- Create Date:      09/23/2010
 -- Design Name:      DE2_Board
 -- Module Name:      DE2_Board 
 -- Target Board:     Altera DE2 Evaluation Board
@@ -256,7 +256,9 @@ architecture behavioral of DE2_Board_top_level is
             lcd_RS                              : out   std_logic;                                        -- RS
             lcd_RW                              : out   std_logic;                                        -- RW
             lcd_data                            : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
-            lcd_E                               : out   std_logic                                         -- E
+            lcd_E                               : out   std_logic;                                        -- E
+            rs232_rxd                           : in    std_logic                     := 'X';             -- rxd
+            rs232_txd                           : out   std_logic                                         -- txd
         );
     end component Nios_Qsys;
 	
@@ -316,7 +318,9 @@ begin
 				lcd_RS                              => LCD_RS,                              --                          lcd.RS
             lcd_RW                              => LCD_RW,                              --                             .RW
             lcd_data                            => LCD_DATA,                            --                             .data
-            lcd_E                               => LCD_EN                                --                             .E
+            lcd_E                               => LCD_EN,                               --                             .E
+            rs232_rxd                           => UART_RXD,                           --                        rs232.rxd
+            rs232_txd                           => UART_TXD                                  --                             .E
         );
 	  
   clockPLL_inst : clockPLL PORT MAP (
@@ -383,7 +387,7 @@ begin
 	AUD_ADCLRCL <= '0';  -- Audio CODEC ADC LR Clock
 	
 	-- RS-232 Serial Port
-	UART_TXD <= '0';  -- UART Transmitter
+--	UART_TXD <= '0';  -- UART Transmitter
 	
 	-- PS/2 Serial Port
 	PS2_CLK <= '0';  -- PS/2 Clock

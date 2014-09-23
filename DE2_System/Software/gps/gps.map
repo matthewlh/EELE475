@@ -1,0 +1,1359 @@
+Archive member included because of file (symbol)
+
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                              obj/default/main.o (_impure_ptr)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                              obj/default/main.o (putchar)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o) (_putc_r)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o) (__sfvwrite_small_dev)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o) (_write_r)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o) (errno)
+../gps_bsp/\libhal_bsp.a(alt_load.o)
+                              ../gps_bsp//obj/HAL/src/crt0.o (alt_load)
+../gps_bsp/\libhal_bsp.a(alt_main.o)
+                              ../gps_bsp//obj/HAL/src/crt0.o (alt_main)
+../gps_bsp/\libhal_bsp.a(alt_write.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o) (write)
+../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (alt_irq_init)
+../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_read_fd)
+../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_jtag_uart_init)
+../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_ioctl)
+../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_read)
+../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o) (altera_avalon_jtag_uart_write)
+../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_lcd_16207_init)
+../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_lcd_16207_write_fd)
+../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_avalon_uart_read_fd)
+../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_close)
+../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_read)
+../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o) (altera_avalon_uart_write)
+../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_alarm_start)
+../gps_bsp/\libhal_bsp.a(alt_close.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (close)
+../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../gps_bsp/\libhal_bsp.a(alt_dev.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_list)
+../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (alt_dev_llist_insert)
+../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (_do_ctors)
+../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (_do_dtors)
+../gps_bsp/\libhal_bsp.a(alt_errno.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_write.o) (alt_errno)
+../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../gps_bsp/\libhal_bsp.a(alt_iic.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (alt_ic_isr_register)
+../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_iic.o) (alt_iic_isr_register)
+../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (alt_io_redirect)
+../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_entry)
+../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o) (alt_irq_handler)
+../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_iic.o) (alt_irq_active)
+../gps_bsp/\libhal_bsp.a(alt_open.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o) (open)
+../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_close.o) (alt_release_fd)
+../gps_bsp/\libhal_bsp.a(alt_tick.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o) (_alt_tick_rate)
+../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o) (usleep)
+../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_usleep.o) (alt_busy_sleep)
+../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o) (alt_exception)
+../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_open.o) (alt_find_dev)
+../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_open.o) (alt_find_file)
+../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_open.o) (alt_get_fd)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (atexit)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o) (__ctype_ptr)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_main.o) (exit)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_find_dev.o) (memcmp)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o) (memcpy)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o) (memset)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_find_dev.o) (strlen)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o) (__register_exitproc)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o) (__call_exitprocs)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                              ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o) (__divsi3)
+c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                              ../gps_bsp/\libhal_bsp.a(alt_write.o) (__mulsi3)
+../gps_bsp/\libhal_bsp.a(alt_exit.o)
+                              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+alt_irq             0x100             ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+errno               0x4               c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+_atexit0            0x8c              c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+
+Discarded input sections
+
+ .gnu.warning.__alt_invalid
+                0x00000000        0x0 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00800000         0x00000020
+sdram_controller_0 0x00800020         0x007fffe0
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../gps_bsp//obj/HAL/src/crt0.o
+LOAD obj/default/main.o
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libstdc++.a
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libm.a
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+START GROUP
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+LOAD ../gps_bsp/\libhal_bsp.a
+END GROUP
+LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a
+                0x00800000                __alt_mem_sdram_controller_0 = 0x800000
+
+.entry          0x00800000       0x20
+ *(.entry)
+ .entry         0x00800000       0x20 ../gps_bsp//obj/HAL/src/crt0.o
+                0x00800000                __reset
+
+.exceptions     0x00800020      0x194
+                0x00800020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00800020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ .exceptions.entry.label
+                0x00800020        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+                0x00800020                alt_irq_entry
+ .exceptions.entry.label
+                0x00800020        0x0 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+                0x00800020                alt_exception
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ .exceptions.entry
+                0x00800020       0x54 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ .exceptions.irqtest
+                0x00800074       0x10 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ .exceptions.irqhandler
+                0x00800084        0x4 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ .exceptions.irqreturn
+                0x00800088        0x4 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.label)
+ .exceptions.notirq.label
+                0x0080008c        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ .exceptions.notirq
+                0x0080008c        0x8 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ .exceptions.unknown
+                0x00800094        0x4 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.label)
+ .exceptions.exit.label
+                0x00800098        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .exceptions.exit.label
+                0x00800098        0x0 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ .exceptions.exit
+                0x00800098       0x54 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ *(.exceptions)
+ .exceptions    0x008000ec       0xc8 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x008000ec                alt_irq_handler
+                0x008001b4                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00800020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x008001b4     0x42c4
+                0x008001b4                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x008001b4       0x3c ../gps_bsp//obj/HAL/src/crt0.o
+                0x008001b4                _start
+ .text          0x008001f0       0x34 obj/default/main.o
+                0x008001f0                main
+ .text          0x00800224        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .text          0x00800224       0x24 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                0x00800224                putchar
+                0x00800240                _putchar_r
+ .text          0x00800248       0xe4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                0x00800248                putc
+                0x008002b8                _putc_r
+ .text          0x0080032c       0xbc c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                0x0080032c                __sfvwrite_small_dev
+ .text          0x008003e8       0x78 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                0x008003e8                _write_r
+ .text          0x00800460        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .text          0x00800460       0xec ../gps_bsp/\libhal_bsp.a(alt_load.o)
+                0x00800460                alt_load
+ .text          0x0080054c       0x6c ../gps_bsp/\libhal_bsp.a(alt_main.o)
+                0x0080054c                alt_main
+ .text          0x008005b8      0x184 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+                0x008005b8                write
+ .text          0x0080073c       0xd8 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0080073c                alt_irq_init
+                0x00800770                alt_sys_init
+ .text          0x00800814      0x148 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00800814                altera_avalon_jtag_uart_read_fd
+                0x0080086c                altera_avalon_jtag_uart_write_fd
+                0x008008c4                altera_avalon_jtag_uart_close_fd
+                0x0080090c                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x0080095c      0x40c ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x0080095c                altera_avalon_jtag_uart_init
+                0x00800cf4                altera_avalon_jtag_uart_close
+ .text          0x00800d68       0xf4 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x00800d68                altera_avalon_jtag_uart_ioctl
+ .text          0x00800e5c      0x224 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00800e5c                altera_avalon_jtag_uart_read
+ .text          0x00801080      0x240 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x00801080                altera_avalon_jtag_uart_write
+ .text          0x008012c0      0xf80 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+                0x00801afc                altera_avalon_lcd_16207_write
+                0x00802104                altera_avalon_lcd_16207_init
+ .text          0x00802240       0x58 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+                0x00802240                altera_avalon_lcd_16207_write_fd
+ .text          0x00802298       0xf8 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+                0x00802298                altera_avalon_uart_read_fd
+                0x008022f0                altera_avalon_uart_write_fd
+                0x00802348                altera_avalon_uart_close_fd
+ .text          0x00802390      0x400 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+                0x00802390                altera_avalon_uart_init
+                0x00802730                altera_avalon_uart_close
+ .text          0x00802790      0x290 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+                0x00802790                altera_avalon_uart_read
+ .text          0x00802a20      0x228 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+                0x00802a20                altera_avalon_uart_write
+ .text          0x00802c48      0x154 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x00802c48                alt_alarm_start
+ .text          0x00802d9c      0x160 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+                0x00802d9c                close
+ .text          0x00802efc       0x1c ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00802efc                alt_dcache_flush_all
+ .text          0x00802f18       0x2c ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00802f44      0x114 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x00802f44                alt_dev_llist_insert
+ .text          0x00803058       0x64 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x00803058                _do_ctors
+ .text          0x008030bc       0x64 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                0x008030bc                _do_dtors
+ .text          0x00803120        0x0 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x00803120       0x1c ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00803120                alt_icache_flush_all
+ .text          0x0080313c      0x1d4 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+                0x0080313c                alt_ic_isr_register
+                0x0080318c                alt_ic_irq_enable
+                0x00803228                alt_ic_irq_disable
+                0x008032c8                alt_ic_irq_enabled
+ .text          0x00803310       0xf8 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+                0x00803310                alt_iic_isr_register
+ .text          0x00803408      0x150 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x008034e0                alt_io_redirect
+ .text          0x00803558        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x00803558        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x00803558        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x00803558      0x2e4 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+                0x00803650                open
+ .text          0x0080383c       0x78 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x0080383c                alt_release_fd
+ .text          0x008038b4      0x1a4 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+                0x008038b4                alt_alarm_stop
+                0x0080394c                alt_tick
+ .text          0x00803a58       0x30 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+                0x00803a58                usleep
+ .text          0x00803a88       0x20 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00803a88                altera_nios2_qsys_irq_init
+ .text          0x00803aa8      0x15c ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x00803aa8                alt_busy_sleep
+ .text          0x00803c04        0x0 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x00803c04       0x94 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x00803c04                alt_find_dev
+ .text          0x00803c98      0x120 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x00803c98                alt_find_file
+ .text          0x00803db8       0xd0 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x00803db8                alt_get_fd
+ .text          0x00803e88       0x14 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+                0x00803e88                atexit
+ .text          0x00803e9c        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .text          0x00803e9c       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+                0x00803e9c                exit
+ .text          0x00803ebc       0x3c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+                0x00803ebc                memcmp
+ .text          0x00803ef8       0x2c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                0x00803ef8                memcpy
+ .text          0x00803f24       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                0x00803f24                memset
+ .text          0x00803f44       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                0x00803f44                strlen
+ .text          0x00803f64      0x16c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+                0x00803f64                __register_exitproc
+ .text          0x008040d0      0x1c0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+                0x008040d4                __call_exitprocs
+ .text          0x00804290      0x14c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x0080430c                __divsi3
+                0x0080436c                __modsi3
+                0x008043cc                __udivsi3
+                0x008043d4                __umodsi3
+ .text          0x008043dc       0x38 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x008043dc                __mulsi3
+ .text          0x00804414       0x60 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00804454                _exit
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00804474                PROVIDE (__etext, ABSOLUTE (.))
+                0x00804474                PROVIDE (_etext, ABSOLUTE (.))
+                0x00804474                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00804474                . = ALIGN (0x4)
+                0x00804474                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00804474                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00804474                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00804474                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00804474                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00804474                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x00804474                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+ .ctors.65535   0x00804474        0x4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+                0x00804478                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00804478                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00804478                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00804478                . = ALIGN (0x4)
+
+.rodata         0x00804478      0x2dc
+                0x00804478                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00804478                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00804478       0x20 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .rodata        0x00804498       0x2c ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .rodata        0x008044c4        0xc ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .rodata        0x008044d0      0x281 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+                0x008044d0                _ctype_
+ *(.rodata1)
+                0x00804754                . = ALIGN (0x4)
+ *fill*         0x00804751        0x3 00
+                0x00804754                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00804478                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00804754     0x1500 load address 0x00805c54
+                0x00804754                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00804754                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00804754        0x0 ../gps_bsp//obj/HAL/src/crt0.o
+ .data          0x00804754        0x0 obj/default/main.o
+ .data          0x00804754       0xe0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .data          0x00804834        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .data          0x00804834        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .data          0x00804834        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .data          0x00804834        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .data          0x00804834        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .data          0x00804834        0x0 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00804834        0x0 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00804834        0x0 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .data          0x00804834     0x1244 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00805a78        0x0 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00805a78      0x1a8 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00805a78                alt_dev_null
+                0x00805aa0                alt_fd_list
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x00805c20        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .data          0x00805c20        0x0 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+                0x0080dc20                _gp = ABSOLUTE ((. + 0x8000))
+                0x0080dc20                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00805c20        0x8 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                0x00805c20                _impure_ptr
+                0x00805c24                _global_impure_ptr
+ .sdata         0x00805c28        0x4 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .sdata         0x00805c2c       0x14 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00805c2c                alt_fs_list
+                0x00805c34                alt_dev_list
+                0x00805c3c                alt_max_fd
+ .sdata         0x00805c40        0x4 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+                0x00805c40                alt_errno
+ .sdata         0x00805c44        0x4 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00805c44                alt_priority_mask
+ .sdata         0x00805c48        0x8 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00805c48                alt_alarm_list
+ .sdata         0x00805c50        0x4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+                0x00805c50                __ctype_ptr
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00805c54                . = ALIGN (0x4)
+                0x00805c54                _edata = ABSOLUTE (.)
+                0x00805c54                PROVIDE (edata, ABSOLUTE (.))
+                0x00805c54                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00805c54                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00807154      0x1a8
+                0x00807154                __bss_start = ABSOLUTE (.)
+                0x00807154                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00807154                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00807154        0x4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                0x00807154                errno
+ .sbss          0x00807158        0xc ../gps_bsp/\libhal_bsp.a(alt_main.o)
+                0x00807158                alt_argc
+                0x0080715c                alt_argv
+                0x00807160                alt_envp
+ .sbss          0x00807164        0x4 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x00807164                alt_irq_active
+ .sbss          0x00807168        0x8 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+                0x00807168                _alt_tick_rate
+                0x0080716c                _alt_nticks
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00807170                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00807170                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00807170        0x0 ../gps_bsp//obj/HAL/src/crt0.o
+ .bss           0x00807170        0x0 obj/default/main.o
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x00807170        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x00807170        0x0 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+ *(COMMON)
+ COMMON         0x00807170      0x100 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x00807170                alt_irq
+ COMMON         0x00807270       0x8c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+                0x00807270                _atexit0
+                0x008072fc                . = ALIGN (0x4)
+                0x008072fc                __bss_end = ABSOLUTE (.)
+
+.sdram_controller_0
+                0x008072fc        0x0
+                0x008072fc                PROVIDE (_alt_partition_sdram_controller_0_start, ABSOLUTE (.))
+ *(.sdram_controller_0. sdram_controller_0.*)
+                0x008072fc                . = ALIGN (0x4)
+                0x008072fc                PROVIDE (_alt_partition_sdram_controller_0_end, ABSOLUTE (.))
+                0x008072fc                _end = ABSOLUTE (.)
+                0x008072fc                end = ABSOLUTE (.)
+                0x008072fc                __alt_stack_base = ABSOLUTE (.)
+                0x008072fc                PROVIDE (_alt_partition_sdram_controller_0_load_addr, LOADADDR (.sdram_controller_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x26
+ *(.comment)
+ .comment       0x00000000       0x26 obj/default/main.o
+                                 0x27 (size before relaxing)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .comment       0x00000000       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .comment       0x00000000       0x27 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x718
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../gps_bsp//obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/main.o
+ .debug_aranges
+                0x00000048       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_aranges
+                0x00000068       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_aranges
+                0x00000088       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_aranges
+                0x000000a8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_aranges
+                0x000000c8       0x20 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000000e8       0x20 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000108       0x20 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_aranges
+                0x00000128       0x20 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000148       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_aranges
+                0x00000168       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_aranges
+                0x00000188       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_aranges
+                0x000001a8       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_aranges
+                0x000001c8       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_aranges
+                0x000001e8       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_aranges
+                0x00000208       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_aranges
+                0x00000228       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_aranges
+                0x00000248       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_aranges
+                0x00000268       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_aranges
+                0x00000288       0x20 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_aranges
+                0x000002a8       0x20 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_aranges
+                0x000002c8       0x20 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_aranges
+                0x000002e8       0x20 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000308       0x20 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_aranges
+                0x00000328       0x20 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_aranges
+                0x00000348       0x20 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_aranges
+                0x00000368       0x20 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_aranges
+                0x00000388       0x20 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x000003a8       0x20 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_aranges
+                0x000003c8       0x20 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_aranges
+                0x000003e8       0x20 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_aranges
+                0x00000408       0x30 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_aranges
+                0x00000438       0x28 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_aranges
+                0x00000460       0x20 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_aranges
+                0x00000480       0x20 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_aranges
+                0x000004a0       0x20 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_aranges
+                0x000004c0       0x20 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_aranges
+                0x000004e0       0x20 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000500       0x20 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_aranges
+                0x00000520       0x38 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_aranges
+                0x00000558       0x20 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_aranges
+                0x00000578       0x20 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_aranges
+                0x00000598       0x20 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_aranges
+                0x000005b8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_aranges
+                0x000005d8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_aranges
+                0x000005f8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_aranges
+                0x00000618       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_aranges
+                0x00000638       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_aranges
+                0x00000658       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_aranges
+                0x00000678       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_aranges
+                0x00000698       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_aranges
+                0x000006b8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x000006d8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_aranges
+                0x000006f8       0x20 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_pubnames
+                0x00000000      0xaed
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x1b obj/default/main.o
+ .debug_pubnames
+                0x0000001b       0x39 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_pubnames
+                0x00000054       0x2d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_pubnames
+                0x00000081       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_pubnames
+                0x000000a8       0x2b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_pubnames
+                0x000000d3       0x1f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_pubnames
+                0x000000f2       0x1c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_pubnames
+                0x0000010e       0x1f ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x0000012d       0x46 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x00000173       0x1c ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_pubnames
+                0x0000018f       0x34 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x000001c3       0xa5 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_pubnames
+                0x00000268       0x55 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_pubnames
+                0x000002bd       0x34 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_pubnames
+                0x000002f1       0x33 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_pubnames
+                0x00000324       0x34 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_pubnames
+                0x00000358       0x55 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_pubnames
+                0x000003ad       0x37 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_pubnames
+                0x000003e4       0x71 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_pubnames
+                0x00000455       0x4b ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_pubnames
+                0x000004a0       0x2e ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_pubnames
+                0x000004ce       0x2f ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_pubnames
+                0x000004fd       0x26 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_pubnames
+                0x00000523       0x1c ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_pubnames
+                0x0000053f       0x2b ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x0000056a       0x63 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_pubnames
+                0x000005cd       0x2b ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_pubnames
+                0x000005f8       0x20 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_pubnames
+                0x00000618       0x20 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_pubnames
+                0x00000638       0x20 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_pubnames
+                0x00000658       0x2b ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x00000683       0x6e ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_pubnames
+                0x000006f1       0x2b ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_pubnames
+                0x0000071c       0x26 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_pubnames
+                0x00000742       0x32 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_pubnames
+                0x00000774       0x3b ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_pubnames
+                0x000007af       0x1b ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_pubnames
+                0x000007ca       0x25 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_pubnames
+                0x000007ef       0x68 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_pubnames
+                0x00000857       0x1d ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_pubnames
+                0x00000874       0x31 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_pubnames
+                0x000008a5       0x25 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_pubnames
+                0x000008ca       0x23 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_pubnames
+                0x000008ed       0x24 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_pubnames
+                0x00000911       0x21 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_pubnames
+                0x00000932       0x2a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_pubnames
+                0x0000095c       0x2e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .debug_pubnames
+                0x0000098a       0x1b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_pubnames
+                0x000009a5       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_pubnames
+                0x000009c2       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_pubnames
+                0x000009df       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_pubnames
+                0x000009fc       0x1d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_pubnames
+                0x00000a19       0x2a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_pubnames
+                0x00000a43       0x27 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_pubnames
+                0x00000a6a       0x48 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_pubnames
+                0x00000ab2       0x1f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_pubnames
+                0x00000ad1       0x1c ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_info     0x00000000     0xe531
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x77 ../gps_bsp//obj/HAL/src/crt0.o
+ .debug_info    0x00000077      0xbdd obj/default/main.o
+ .debug_info    0x00000c54      0x636 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_info    0x0000128a      0x66b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_info    0x000018f5      0x6b8 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_info    0x00001fad      0x68e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_info    0x0000263b      0x68c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_info    0x00002cc7       0x8c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_info    0x00002d53      0x289 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00002fdc      0x221 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x000031fd      0x68f ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_info    0x0000388c      0xa5d ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x000042e9      0x7d5 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x00004abe      0x5fd ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x000050bb      0x43f ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x000054fa      0x542 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x00005a3c      0x53a ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00005f76      0x8ea ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_info    0x00006860      0x70e ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_info    0x00006f6e      0x638 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_info    0x000075a6      0x50a ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_info    0x00007ab0      0x4be ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_info    0x00007f6e      0x4bc ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_info    0x0000842a      0x43e ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x00008868      0x463 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x00008ccb      0x158 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00008e23      0x67b ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000949e      0x2b3 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00009751      0x10b ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000985c      0x10a ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x00009966      0x160 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x00009ac6      0x158 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00009c1e      0x48f ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_info    0x0000a0ad      0x310 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_info    0x0000a3bd      0x691 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000aa4e       0x80 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000aace      0x271 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000ad3f      0x163 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000aea2      0x521 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000b3c3      0x3ee ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0000b7b1      0x3fa ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x0000bbab      0x164 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x0000bd0f      0x15f ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x0000be6e      0x1a7 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x0000c015       0x86 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x0000c09b      0x414 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000c4af      0x41b ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000c8ca      0x45c ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x0000cd26      0x186 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_info    0x0000ceac       0xa0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .debug_info    0x0000cf4c       0x9f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_info    0x0000cfeb       0xef c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_info    0x0000d0da       0xc2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_info    0x0000d19c       0xd7 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_info    0x0000d273       0xc2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x0000d335      0x68f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_info    0x0000d9c4      0x6d5 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000e099      0x21c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000e2b5       0xf3 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000e3a8      0x189 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_abbrev   0x00000000     0x3503
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../gps_bsp//obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012      0x17d obj/default/main.o
+ .debug_abbrev  0x0000018f      0x13f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_abbrev  0x000002ce      0x158 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_abbrev  0x00000426      0x167 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_abbrev  0x0000058d      0x179 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_abbrev  0x00000706      0x16c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_abbrev  0x00000872       0x3b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x000008ad       0x88 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000935       0xb7 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x000009ec      0x100 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_abbrev  0x00000aec      0x158 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000c44       0xf7 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x00000d3b      0x17c ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x00000eb7       0xf0 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x00000fa7      0x191 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x00001138      0x18d ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x000012c5      0x1c3 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_abbrev  0x00001488      0x104 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_abbrev  0x0000158c       0xe8 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_abbrev  0x00001674      0x148 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_abbrev  0x000017bc      0x174 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_abbrev  0x00001930      0x17b ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_abbrev  0x00001aab      0x172 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x00001c1d       0xfb ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x00001d18       0x3f ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00001d57       0xc7 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x00001e1e       0xf6 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x00001f14       0x76 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x00001f8a       0x76 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x00002000       0x5e ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000205e       0x3f ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000209d      0x134 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_abbrev  0x000021d1      0x14e ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_abbrev  0x0000231f       0xf0 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x0000240f       0x12 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x00002421      0x10c ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000252d       0x44 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00002571      0x112 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00002683       0xc1 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x00002744      0x150 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x00002894       0x5d ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_abbrev  0x000028f1       0x3f ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x00002930       0x6c ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_abbrev  0x0000299c       0x12 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x000029ae       0xcf ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x00002a7d       0xcf ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x00002b4c       0xfb ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x00002c47       0xc6 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_abbrev  0x00002d0d       0x61 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x00002d6e       0x4e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_abbrev  0x00002dbc       0x7c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x00002e38       0x9d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x00002ed5       0x8b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_abbrev  0x00002f60       0x7a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_abbrev  0x00002fda      0x196 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x00003170      0x1c6 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x00003336       0xe0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x00003416       0x7b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x00003491       0x72 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_line     0x00000000     0x8f90
+ *(.debug_line)
+ .debug_line    0x00000000       0x66 ../gps_bsp//obj/HAL/src/crt0.o
+ .debug_line    0x00000066      0x1bb obj/default/main.o
+ .debug_line    0x00000221      0x230 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+ .debug_line    0x00000451      0x267 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_line    0x000006b8      0x2d2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_line    0x0000098a      0x2a9 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_line    0x00000c33      0x29d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_line    0x00000ed0      0x1e2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+ .debug_line    0x000010b2      0x217 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x000012c9      0x2ca ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00001593      0x2c9 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_line    0x0000185c      0x333 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00001b8f      0x217 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x00001da6      0x4ab ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x00002251      0x317 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x00002568      0x3f7 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x0000295f      0x405 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x00002d64      0x8c1 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_line    0x00003625      0x1b7 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_line    0x000037dc      0x1d2 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_line    0x000039ae      0x492 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_line    0x00003e40      0x404 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_line    0x00004244      0x3e5 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_line    0x00004629      0x2dc ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x00004905      0x299 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x00004b9e      0x1b5 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00004d53      0x254 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x00004fa7      0x25a ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x00005201       0x83 ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x00005284       0x83 ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x00005307      0x1aa ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x000054b1      0x1b5 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00005666      0x2c8 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_line    0x0000592e      0x249 ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_line    0x00005b77      0x2b4 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00005e2b       0x6b ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x00005e96      0x248 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x000060de       0x72 ../gps_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00006150      0x2ff ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000644f       0xed ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x0000653c      0x2dc ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x00006818      0x202 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x00006a1a      0x1ce ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00006be8      0x25c ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x00006e44       0xab ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x00006eef      0x26b ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x0000715a      0x27c ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x000073d6      0x297 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x0000766d      0x203 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_line    0x00007870       0x81 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+ .debug_line    0x000078f1      0x223 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_line    0x00007b14      0x270 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_line    0x00007d84      0x145 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_line    0x00007ec9      0x258 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_line    0x00008121      0x250 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x00008371      0x350 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_line    0x000086c1      0x360 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00008a21      0x24f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x00008c70      0x11a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x00008d8a      0x206 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_frame    0x00000000      0xd50
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c obj/default/main.o
+ .debug_frame   0x0000002c       0x30 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_frame   0x0000005c       0x48 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_frame   0x000000a4       0x30 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_frame   0x000000d4       0x2c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_frame   0x00000100       0x48 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000148       0x2c ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000174       0x48 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_frame   0x000001bc       0x64 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000220       0x80 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_frame   0x000002a0       0x80 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_frame   0x00000320       0x2c ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_frame   0x0000034c       0x2c ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_frame   0x00000378       0x2c ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_frame   0x000003a4      0x124 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_frame   0x000004c8       0x2c ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_frame   0x000004f4       0x64 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_frame   0x00000558       0x9c ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_frame   0x000005f4       0x48 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_frame   0x0000063c       0x48 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_frame   0x00000684       0x2c ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_frame   0x000006b0       0x48 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_frame   0x000006f8       0x2c ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000724       0x2c ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_frame   0x00000750       0x48 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_frame   0x00000798       0x2c ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_frame   0x000007c4       0x2c ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_frame   0x000007f0       0x2c ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x0000081c       0x80 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_frame   0x0000089c       0x2c ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_frame   0x000008c8       0x4c ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_frame   0x00000914       0x2c ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_frame   0x00000940       0x68 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_frame   0x000009a8       0x30 ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_frame   0x000009d8       0x48 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_frame   0x00000a20       0x2c ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_frame   0x00000a4c       0x2c ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x00000a78       0x2c ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_frame   0x00000aa4       0x2c ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_frame   0x00000ad0       0x2c ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_frame   0x00000afc       0x30 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_frame   0x00000b2c       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_frame   0x00000b4c       0x2c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_frame   0x00000b78       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_frame   0x00000b98       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_frame   0x00000bb8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_frame   0x00000bd8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_frame   0x00000bf8       0x34 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000c2c       0x4c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000c78       0x70 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x00000ce8       0x20 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_frame   0x00000d08       0x48 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_str      0x00000000      0xf34
+ *(.debug_str)
+ .debug_str     0x00000000       0x20 obj/default/main.o
+ .debug_str     0x00000020      0x405 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-impure.o)
+                                0x45d (size before relaxing)
+ .debug_str     0x00000425       0xed c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+                                0x452 (size before relaxing)
+ .debug_str     0x00000512       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+                                0x455 (size before relaxing)
+ .debug_str     0x00000561       0x70 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+                                0x46a (size before relaxing)
+ .debug_str     0x000005d1       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+                                0x451 (size before relaxing)
+ .debug_str     0x00000620       0x40 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-int_errno.o)
+                                0x177 (size before relaxing)
+ .debug_str     0x00000660       0x12 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_str     0x00000672       0x12 ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_str     0x00000684       0x12 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_str     0x00000696       0x12 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_str     0x000006a8       0x12 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_str     0x000006ba       0x1a ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_str     0x000006d4       0x12 ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_str     0x000006e6       0x1a ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_str     0x00000700       0x1a ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_str     0x0000071a       0x25 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_str     0x0000073f       0x12 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_str     0x00000751       0x12 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_str     0x00000763       0x19 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_str     0x0000077c       0x1a ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_str     0x00000796       0x1a ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_str     0x000007b0       0x23 ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_str     0x000007d3       0x12 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_str     0x000007e5       0x12 ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_str     0x000007f7       0x12 ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_str     0x00000809       0x12 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_str     0x0000081b       0x12 ../gps_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_str     0x0000082d       0x12 ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_str     0x0000083f       0x18 ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_str     0x00000857       0x1a ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_str     0x00000871       0x12 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_str     0x00000883       0x12 ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_str     0x00000895       0x12 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_str     0x000008a7       0x1a ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_str     0x000008c1       0x12 ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_str     0x000008d3       0x12 ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_str     0x000008e5       0x12 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_str     0x000008f7       0x12 ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_str     0x00000909       0x12 ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_str     0x0000091b       0x12 ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_str     0x0000092d       0xdb c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+                                0x1e5 (size before relaxing)
+ .debug_str     0x00000a08       0xf6 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-ctype_.o)
+                                0x119 (size before relaxing)
+ .debug_str     0x00000afe       0x41 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+                                0x178 (size before relaxing)
+ .debug_str     0x00000b3f       0xe2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+                                0x17e (size before relaxing)
+ .debug_str     0x00000c21       0x59 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+                                0x129 (size before relaxing)
+ .debug_str     0x00000c7a       0x45 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+                                0x17e (size before relaxing)
+ .debug_str     0x00000cbf       0x45 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+                                0x184 (size before relaxing)
+ .debug_str     0x00000d04       0x54 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+                                0x467 (size before relaxing)
+ .debug_str     0x00000d58       0x7e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+                                0x491 (size before relaxing)
+ .debug_str     0x00000dd6      0x10b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                                0x1b4 (size before relaxing)
+ .debug_str     0x00000ee1       0x37 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                                0x175 (size before relaxing)
+ .debug_str     0x00000f18       0x1c ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_loc      0x00000000     0x15fa
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2b obj/default/main.o
+ .debug_loc     0x0000002b       0x44 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putchar.o)
+ .debug_loc     0x0000006f       0xd4 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-putc.o)
+ .debug_loc     0x00000143      0x162 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-fvwrite_small_dev.o)
+ .debug_loc     0x000002a5       0x97 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-writer.o)
+ .debug_loc     0x0000033c       0x56 ../gps_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000392       0x2b ../gps_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x000003bd       0x56 ../gps_bsp/\libhal_bsp.a(alt_write.o)
+ .debug_loc     0x00000413       0x81 ../gps_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000494       0xac ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_loc     0x00000540       0xac ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_loc     0x000005ec       0x2b ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_loc     0x00000617       0x2b ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_loc     0x00000642       0x2b ../gps_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x0000066d      0x184 ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207.o)
+ .debug_loc     0x000007f1       0x2b ../gps_bsp/\libhal_bsp.a(altera_avalon_lcd_16207_fd.o)
+ .debug_loc     0x0000081c       0x81 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_fd.o)
+ .debug_loc     0x0000089d       0xd7 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_init.o)
+ .debug_loc     0x00000974       0x57 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_read.o)
+ .debug_loc     0x000009cb       0x56 ../gps_bsp/\libhal_bsp.a(altera_avalon_uart_write.o)
+ .debug_loc     0x00000a21       0x2b ../gps_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_loc     0x00000a4c       0x56 ../gps_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_loc     0x00000aa2       0x2b ../gps_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_loc     0x00000acd       0x2b ../gps_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_loc     0x00000af8       0x56 ../gps_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_loc     0x00000b4e       0x2b ../gps_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_loc     0x00000b79       0x2b ../gps_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_loc     0x00000ba4       0x2b ../gps_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_loc     0x00000bcf       0xac ../gps_bsp/\libhal_bsp.a(alt_iic.o)
+ .debug_loc     0x00000c7b       0x2b ../gps_bsp/\libhal_bsp.a(alt_iic_isr_register.o)
+ .debug_loc     0x00000ca6       0x56 ../gps_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_loc     0x00000cfc       0x2b ../gps_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_loc     0x00000d27       0x81 ../gps_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_loc     0x00000da8       0x2b ../gps_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_loc     0x00000dd3       0x56 ../gps_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_loc     0x00000e29       0x2b ../gps_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_loc     0x00000e54       0x2b ../gps_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_loc     0x00000e7f       0x2b ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_loc     0x00000eaa       0x2b ../gps_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_loc     0x00000ed5       0x2b ../gps_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_loc     0x00000f00       0x2b ../gps_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_loc     0x00000f2b       0x1e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-atexit.o)
+ .debug_loc     0x00000f49       0x3d c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-exit.o)
+ .debug_loc     0x00000f86       0x70 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcmp.o)
+ .debug_loc     0x00000ff6       0x1e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memcpy.o)
+ .debug_loc     0x00001014       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-memset.o)
+ .debug_loc     0x00001063       0x1e c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x00001081      0x141 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__atexit.o)
+ .debug_loc     0x000011c2      0x1c1 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)
+ .debug_loc     0x00001383      0x1d2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x00001555       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x000015a4       0x56 ../gps_bsp/\libhal_bsp.a(alt_exit.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x40
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x10 ../gps_bsp//obj/HAL/src/crt0.o
+ .debug_alt_sim_info
+                0x00000010       0x30 ../gps_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x01000000                __alt_data_end = 0x1000000
+                0x01000000                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x008072fc                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x008072fc                PROVIDE (__alt_heap_start, end)
+                0x01000000                PROVIDE (__alt_heap_limit, 0x1000000)
+OUTPUT(gps.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x90
+ .debug_ranges  0x00000000       0x20 ../gps_bsp//obj/HAL/src/crt0.o
+ .debug_ranges  0x00000020       0x28 ../gps_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_ranges  0x00000048       0x30 ../gps_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_ranges  0x00000078       0x18 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-__call_atexit.o)

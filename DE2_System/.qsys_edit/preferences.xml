@@ -11,14 +11,14 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="332" />
-   <clocksource preferredWidth="331" />
-   <frequency preferredWidth="321" />
+   <clockname preferredWidth="330" />
+   <clocksource preferredWidth="330" />
+   <frequency preferredWidth="324" />
   </columns>
  </clocktable>
  <library
-   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces,Library/Clock and Reset,Library,Library/Memories and Memory Controllers/External Memory Interfaces/SDRAM Interfaces,Library/Peripherals,Library/Peripherals/Display,Library/Memories and Memory Controllers,Project" />
- <window width="1296" height="1040" x="624" y="0" />
+   expandedCategories="Library/Interface Protocols,Library/Interface Protocols/Serial,Library,Project" />
+ <window width="1296" height="1040" x="-1288" y="-8" />
  <hdlexample language="VHDL" />
  <generation synthesis="VHDL" path="_PROJECT_NAME_" />
 </preferences>
