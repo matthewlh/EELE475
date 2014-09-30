@@ -24,6 +24,14 @@ typedef struct GPS_TIME_T
 	char second[6];
 } GPS_TIME_T;
 
+typedef struct GPS_TIME_D_T
+{
+	int 	hour;
+	int 	minute;
+	int 	second;
+	char 	ampm[3];
+} GPS_TIME_D_T;
+
 typedef struct GPS_ANGLE_T
 {
 	char degrees[4];
@@ -52,13 +60,13 @@ typedef struct GPGGA_T
 
 typedef struct GPGGA_D_T
 {
-	GPS_TIME_T 	time;
-	double		lat;
-	char 		lat_dir[2];
-	double		lon;
-	char 		lon_dir[2];
-	double		alt;
-	char 		alt_unit[2];
+	GPS_TIME_D_T 	time;
+	double			lat;
+	char 			lat_dir[2];
+	double			lon;
+	char 			lon_dir[2];
+	double			alt;
+	char 			alt_unit[3];
 } GPGGA_D_T;
 
 typedef struct GPGSA_T

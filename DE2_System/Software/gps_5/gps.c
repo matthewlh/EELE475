@@ -396,18 +396,28 @@ void gps_convert_log(void)
 	{
 		case GPGGA:
 			/* convert time */
-			for(i = 0; i < sizeof(temp_log.gpgga.time.hour); i++)
+			converted_log.gpgga_d.time.hour  		 = strtol (&temp_log.gpgga.time.hour[0], &pEnd, 10);
+			converted_log.gpgga_d.time.minute  		 = strtol (&temp_log.gpgga.time.minute[0], &pEnd, 10);
+			converted_log.gpgga_d.time.second  		 = strtol (&temp_log.gpgga.time.second[0], &pEnd, 10);
+
+			/* shift from UTC to MDT */
+			converted_log.gpgga_d.time.hour -= 7;
+			if(converted_log.gpgga_d.time.hour < 0)
 			{
-				converted_log.gpgga_d.time.hour[i] = temp_log.gpgga.time.hour[i];
+				converted_log.gpgga_d.time.hour += 24;
 			}
-			for(i = 0; i < sizeof(temp_log.gpgga.time.minute); i++)
+
+			/* convert to 12 hour time */
+			if(converted_log.gpgga_d.time.hour > 12)
 			{
-				converted_log.gpgga_d.time.minute[i] = temp_log.gpgga.time.minute[i];
+				sprintf(converted_log.gpgga_d.time.ampm, "PM\0");
+				converted_log.gpgga_d.time.hour -= 12;
 			}
-			for(i = 0; i < sizeof(temp_log.gpgga.time.second); i++)
+			else
 			{
-				converted_log.gpgga_d.time.second[i] = temp_log.gpgga.time.second[i];
+				sprintf(converted_log.gpgga_d.time.ampm, "AM\0");
 			}
+
 
 			/* convert latitude */
 			converted_log.gpgga_d.lat  		 = strtod (&temp_log.gpgga.lat.degrees[0], &pEnd);
@@ -428,10 +438,10 @@ void gps_convert_log(void)
 
 			/* convert altitude */
 			converted_log.gpgga_d.alt  = strtod (&temp_log.gpgga.alt.alt[0], &pEnd);
-			for(i = 0; i < sizeof(temp_log.gpgga.alt.unit); i++)
-			{
-				converted_log.gpgga_d.alt_unit[i] = temp_log.gpgga.alt.unit[i];
-			}
+
+			/* convert to ft */
+			converted_log.gpgga_d.alt *= 3.28084;
+			sprintf(converted_log.gpgga_d.alt_unit, "ft\0");
 
 			temp_log = converted_log;
 			temp_log_type = GPGGA_D;
@@ -473,16 +483,16 @@ void gps_print_log(void)
 			printf("GPGGA %s° %s' %s, ", temp_log.gpgga.lat.degrees,
 										 temp_log.gpgga.lat.minutes,
 										 temp_log.gpgga.lat.direction);
-										
+
 			/* print longitude */
 			printf("%s° %s' %s, ", 	temp_log.gpgga.lon.degrees,
 									temp_log.gpgga.lon.minutes,
 									temp_log.gpgga.lon.direction);
-										
+
 			/* print altitude */
 			printf("%s %s, ", 		temp_log.gpgga.alt.alt,
 									temp_log.gpgga.alt.unit);
-										
+
 			/* print time */
 			printf("%s:%s:%s UTC", 	temp_log.gpgga.time.hour,
 									temp_log.gpgga.time.minute,
@@ -491,19 +501,31 @@ void gps_print_log(void)
 			break;
 
 		case GPGGA_D:
-			sprintf(s1, "Lat: %3.3f %s", 	temp_log.gpgga_d.lat,
-											temp_log.gpgga_d.lat_dir);
+			if((*Switches & 0x01) == 0x01)
+			{
+				sprintf(s1, "Lat: %3.3f %s", 	temp_log.gpgga_d.lat,
+												temp_log.gpgga_d.lat_dir);
 
-			sprintf(s2, "Lon: %3.3f %s", 	temp_log.gpgga_d.lon,
-											temp_log.gpgga_d.lon_dir);
+				sprintf(s2, "Lon: %3.3f %s", 	temp_log.gpgga_d.lon,
+												temp_log.gpgga_d.lon_dir);
+			}
+			else
+			{
+				/* print altitude */
+				sprintf(s1, "Elev: %4.1f %s", temp_log.gpgga_d.alt,
+												temp_log.gpgga_d.alt_unit);
+
+				/* print time */
+				sprintf(s2, "Time: %d:%d:%d %s", temp_log.gpgga_d.time.hour,
+												temp_log.gpgga_d.time.minute,
+												temp_log.gpgga_d.time.second,
+												temp_log.gpgga_d.time.ampm);
+			}
+
 			WriteLCD(s1, s2);
 
-			printf("Elev:     = %f %s\n", 				temp_log.gpgga_d.alt,
-														temp_log.gpgga_d.alt_unit);
+			printf("%s\n%s\n", s1, s2);
 
-			printf("Time:     = %s:%s:%s UTC\n", 		temp_log.gpgga.time.hour,
-														temp_log.gpgga.time.minute,
-														temp_log.gpgga.time.second);
 		break;
 			
 		case GPGSA:	
