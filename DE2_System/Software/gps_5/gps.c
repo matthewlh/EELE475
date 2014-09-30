@@ -501,6 +501,7 @@ void gps_print_log(void)
 			break;
 
 		case GPGGA_D:
+<<<<<<< HEAD
 			if((*Switches & 0x01) == 0x01)
 			{
 				sprintf(s1, "Lat: %3.3f %s", 	temp_log.gpgga_d.lat,
@@ -523,6 +524,17 @@ void gps_print_log(void)
 			}
 
 			WriteLCD(s1, s2);
+=======
+			sprintf(s1, "Lat: %3.3f %s\n", 	temp_log.gpgga_d.lat,
+											temp_log.gpgga_d.lat_dir);
+
+			sprintf(s2, "Lon: %3.3f %s\n", 	temp_log.gpgga_d.lon,
+											temp_log.gpgga_d.lon_dir);
+			//WriteLCD(s1, s2);
+
+			printf(s1);
+			printf(s2);
+>>>>>>> parent of 1e26b6b... LCD Works!
 
 			printf("%s\n%s\n", s1, s2);
 
