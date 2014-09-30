@@ -360,6 +360,10 @@ void gps_state_machine(char c)
 			gps_convert_log();
 			gps_print_log();
 		}
+		else
+		{
+			gps_print_error();
+		}
 		
 		/* packet is done */
 		gps_state_machine_reset();
@@ -450,6 +454,23 @@ void gps_convert_log(void)
 
 		case GPGSA:
 
+			/* convert list of SAT ID strings to list of integers */
+			for(i = 0; i < GPS_NUM_SATIDS; i++)
+			{
+				/* if field is empty */
+				if(temp_log.gpgsa.list[i].id[0] == '\0')
+				{
+					converted_log.gpgsa_d.list[i] = -1;
+				}
+				else
+				{
+					converted_log.gpgsa_d.list[i] = strtol (&temp_log.gpgsa.list[i], &pEnd, 10);
+				}
+			}
+
+			temp_log = converted_log;
+			temp_log_type = GPGSA_D;
+
 			break;
 
 		default:
@@ -524,17 +545,8 @@ void gps_print_log(void)
 
 			WriteLCD(s1, s2);
 
-			sprintf(s1, "Lat: %3.3f %s\n", 	temp_log.gpgga_d.lat,
-											temp_log.gpgga_d.lat_dir);
-
-			sprintf(s2, "Lon: %3.3f %s\n", 	temp_log.gpgga_d.lon,
-											temp_log.gpgga_d.lon_dir);
-			//WriteLCD(s1, s2);
-
-			printf(s1);
-			printf(s2);
-
-			printf("%s\n%s\n", s1, s2);
+			printf("\nLatitude = %f degrees\n", temp_log.gpgga_d.lat);
+			printf("Longitude = %f degrees\n", temp_log.gpgga_d.lon);
 
 		break;
 			
@@ -552,6 +564,33 @@ void gps_print_log(void)
 			
 			break;
 			
+		case GPGSA_D:
+
+			/* reset LEDs to all off */
+			*LEDs = 0x00000000;
+
+			/* for each SAT ID */
+			for(i = 0; i < GPS_NUM_SATIDS; i++)
+			{
+				/* set the bit number corresponding to the SAT ID number */
+				*LEDs |= (0x01 << (temp_log.gpgsa_d.list[i]));
+			}
+
+			printf("SAT IDs:  ");
+
+			/* print sat IDs */
+			for(i = 0; i < GPS_NUM_SATIDS; i++)
+			{
+				if(temp_log.gpgsa_d.list[i] != -1)
+				{
+					printf("%d, ", temp_log.gpgsa_d.list[i]);
+				}
+			}
+
+			printf("\n");
+
+			break;
+
 		default:
 			if(debug_level >= SOME)
 			{
@@ -560,4 +599,30 @@ void gps_print_log(void)
 			break;
 	}
 }
+
+
+/************************************************************
+ * gps_print_error()
+ * Arguments: 	void
+ * Returns: 	void
+ * Description: Prints an error message to the LCD and
+ * 				terminal.
+ *
+ ************************************************************/
+void gps_print_error(void)
+{
+	/* local vars */
+	char* s1 = "GPS Unit is not ready.";
+	char* s2 = "Data is invalid";
+
+	/* write it to the LCD and terminal */
+	WriteLCD(s1, s2);
+	printf("\n%s\n%s\n", s1, s2);
+
+}
+
+
+
+
+
 

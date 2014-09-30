@@ -20,6 +20,7 @@
 
 /*** defines ***/
 #define Switches (volatile int *) 0x01001090
+#define LEDs 	 (volatile int *) 0x01001080
 
 /*** prototypes ***/
 void 	WriteLCD		( char* string1, char* string2);

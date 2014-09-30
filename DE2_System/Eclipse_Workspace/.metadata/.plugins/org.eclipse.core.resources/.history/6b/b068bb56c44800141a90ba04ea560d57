@@ -401,7 +401,7 @@ void gps_convert_log(void)
 			converted_log.gpgga_d.time.second  		 = strtol (&temp_log.gpgga.time.second[0], &pEnd, 10);
 
 			/* shift from UTC to MDT */
-			converted_log.gpgga_d.time.hour -= 7;
+			converted_log.gpgga_d.time.hour += -7 +1;
 			if(converted_log.gpgga_d.time.hour < 0)
 			{
 				converted_log.gpgga_d.time.hour += 24;
@@ -410,12 +410,12 @@ void gps_convert_log(void)
 			/* convert to 12 hour time */
 			if(converted_log.gpgga_d.time.hour > 12)
 			{
-				//sprintf(converted_log.gpgga_d.time.ampm, "PM\0");
+				sprintf(converted_log.gpgga_d.time.ampm, "PM\0");
 				converted_log.gpgga_d.time.hour -= 12;
 			}
 			else
 			{
-				//sprintf(converted_log.gpgga_d.time.ampm, "AM\0");
+				sprintf(converted_log.gpgga_d.time.ampm, "AM\0");
 			}
 
 
@@ -449,6 +449,12 @@ void gps_convert_log(void)
 			break;
 
 		case GPGSA:
+
+			/* convert list of SAT ID strings to list of integers */
+			for(i = 0; i < 12; i++)
+			{
+				converted_log.gpgsa_d.list[i] = strtol (&temp_log.gpgsa.list[i], &pEnd, 10);
+			}
 
 			break;
 
@@ -516,7 +522,7 @@ void gps_print_log(void)
 												temp_log.gpgga_d.alt_unit);
 
 				/* print time */
-				sprintf(s2, "Time: %d:%d:%d %s", temp_log.gpgga_d.time.hour,
+				sprintf(s2, "Time: %02d:%02d:%02d%s", temp_log.gpgga_d.time.hour,
 												temp_log.gpgga_d.time.minute,
 												temp_log.gpgga_d.time.second,
 												temp_log.gpgga_d.time.ampm);
@@ -524,17 +530,8 @@ void gps_print_log(void)
 
 			WriteLCD(s1, s2);
 
-			sprintf(s1, "Lat: %3.3f %s\n", 	temp_log.gpgga_d.lat,
-											temp_log.gpgga_d.lat_dir);
-
-			sprintf(s2, "Lon: %3.3f %s\n", 	temp_log.gpgga_d.lon,
-											temp_log.gpgga_d.lon_dir);
-			//WriteLCD(s1, s2);
-
-			printf(s1);
-			printf(s2);
-
-			printf("%s\n%s\n", s1, s2);
+			printf("Latitude = %f degrees\n", temp_log.gpgga_d.lat);
+			printf("Longitude = %f degrees\n", temp_log.gpgga_d.lon);
 
 		break;
 			
@@ -552,6 +549,12 @@ void gps_print_log(void)
 			
 			break;
 			
+		case GPGSA_D:
+
+
+
+			break;
+
 		default:
 			if(debug_level >= SOME)
 			{

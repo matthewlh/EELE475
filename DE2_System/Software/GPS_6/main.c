@@ -64,6 +64,9 @@ int main()
 {
 	char c;
 
+	/* init */
+	*LEDs = 0x00000000;
+	gps_print_error();
 	gps_state_machine_reset();
 
 	while(1)

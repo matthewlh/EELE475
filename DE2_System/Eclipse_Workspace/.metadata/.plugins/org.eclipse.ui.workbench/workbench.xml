@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="27" version="2.0">
+<workbench progressCount="35" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="125" y="125">
 <fastViewData fastViewLocation="1024"/>
@@ -30,17 +30,27 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.c" partName="gps.c" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/gps_5/gps.c" title="gps.c" tooltip="gps_5/gps.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gps_5/gps.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="11733" selectionTopPixel="7220"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.c" partName="gps.c" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/GPS_6/gps.c" title="gps.c" tooltip="GPS_6/gps.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GPS_6/gps.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14223" selectionTopPixel="8885"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" partName="gps.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/gps_5/gps.h" title="gps.h" tooltip="gps_5/gps.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/gps_5/gps.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" partName="gps.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/GPS_6/gps.h" title="gps.h" tooltip="GPS_6/gps.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GPS_6/gps.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="1796" selectionTopPixel="1400"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/GPS_6/main.h" title="main.h" tooltip="GPS_6/main.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GPS_6/main.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="396" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/GPS_6/main.c" title="main.c" tooltip="GPS_6/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GPS_6/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1003" selectionTopPixel="635"/>
 </editor>
 </editors>
 <views>
@@ -58,7 +68,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
@@ -79,7 +88,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -249,13 +258,13 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20429544" ratioLeft="390" ratioRight="1519" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.639485" ratioLeft="596" ratioRight="336" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
-<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="LabelNotFound"/>
+<page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" label="Nios II Console"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:*" label="LabelNotFound"/>
 <page content="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -264,6 +273,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -282,169 +292,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3/gps.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3/gps.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3_bsp/drivers/inc/altera_avalon_pio_regs.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3_bsp/drivers/inc/altera_avalon_lcd_16207_regs.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3_bsp/HAL/src/alt_dev.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3/gps.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_3/gps.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/gps.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/gps.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/gps.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/gps.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_4/gps.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_5/gps.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/gps_5/gps.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GPS_6/gps.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GPS_6/gps.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GPS_6/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GPS_6/main.c"/>
 </editors>
-<item historyLabel="gps.c" index="2">
-<position info="not_deleted" x="11166" y="0"/>
+<item historyLabel="gps.h" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gps.c" index="0">
+<position/>
 </item>
 <item historyLabel="gps.h" index="1">
-<position info="not_deleted" x="749" y="8"/>
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.h" index="3">
-<position info="not_deleted" x="165" y="0"/>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="gps.c" index="2">
-<position info="not_deleted" x="11166" y="0"/>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="11745" y="0"/>
+</item>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="12641" y="0"/>
+</item>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="12342" y="4"/>
 </item>
 <item historyLabel="gps.h" index="1">
-<position info="not_deleted" x="749" y="8"/>
-</item>
-<item historyLabel="main.h" index="3">
-<position info="not_deleted" x="294" y="22"/>
-</item>
-<item historyLabel="altera_avalon_pio_regs.h" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="altera_avalon_lcd_16207_regs.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="260" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="451" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="335" y="0"/>
-</item>
-<item historyLabel="alt_dev.c" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="gps.c" index="2">
-<position info="not_deleted" x="11166" y="0"/>
-</item>
-<item historyLabel="main.h" index="3">
-<position info="not_deleted" x="294" y="22"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="gps.h" index="7">
-<position info="not_deleted" x="749" y="8"/>
-</item>
-<item historyLabel="gps.c" index="8">
-<position info="not_deleted" x="11166" y="0"/>
-</item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.h" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="gps.c" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="gps.h" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.h" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="gps.c" index="11">
-<position info="not_deleted" x="11198" y="0"/>
-</item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="257" y="11"/>
-</item>
-<item historyLabel="main.h" index="10">
-<position info="not_deleted" x="170" y="149"/>
-</item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="257" y="11"/>
-</item>
-<item historyLabel="gps.c" index="13">
-<position info="not_deleted" x="11198" y="8"/>
-</item>
-<item historyLabel="main.c" index="9">
-<position info="not_deleted" x="181" y="8"/>
-</item>
-<item historyLabel="main.h" index="14"/>
-<item historyLabel="gps.c" index="15"/>
-<item historyLabel="gps.h" index="16"/>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="12787" y="0"/>
-</item>
-<item historyLabel="gps.h" index="18">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="12787" y="0"/>
-</item>
-<item historyLabel="gps.h" index="18">
-<position info="not_deleted" x="806" y="12"/>
-</item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="9448" y="4"/>
-</item>
-<item historyLabel="gps.h" index="18">
-<position info="not_deleted" x="384" y="4"/>
-</item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="8897" y="4"/>
-</item>
-<item historyLabel="gps.h" index="18">
-<position info="not_deleted" x="239" y="4"/>
-</item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="9448" y="4"/>
-</item>
-<item historyLabel="gps.h" index="18">
 <position info="not_deleted" x="707" y="4"/>
 </item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="9440" y="7"/>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="9442" y="7"/>
 </item>
-<item historyLabel="gps.h" index="18">
+<item historyLabel="gps.h" index="1">
 <position info="not_deleted" x="1044" y="6"/>
 </item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="9440" y="7"/>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="9442" y="7"/>
 </item>
-<item historyLabel="gps.h" index="18">
-<position info="not_deleted" x="1044" y="6"/>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="9428" y="13"/>
 </item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="9440" y="7"/>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="8651" y="9"/>
 </item>
-<item historyLabel="gps.c" index="17">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="gps.h" index="1">
+<position info="not_deleted" x="1078" y="9"/>
 </item>
-<item historyLabel="gps.h" index="18">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="gps.h" index="1">
+<position info="not_deleted" x="1152" y="9"/>
 </item>
-<item active="true" historyLabel="gps.c" index="17">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="gps.h" index="1">
+<position info="not_deleted" x="806" y="12"/>
+</item>
+<item historyLabel="gps.c" index="0">
+<position info="not_deleted" x="12317" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="11074" y="0"/>
+</item>
+<item historyLabel="gps.h" index="3">
+<position info="not_deleted" x="1058" y="4"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="11074" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="10952" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="10987" y="0"/>
+</item>
+<item historyLabel="gps.h" index="3">
+<position info="not_deleted" x="634" y="5"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13711" y="0"/>
+</item>
+<item historyLabel="main.h" index="4">
+<position info="not_deleted" x="396" y="4"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13353" y="0"/>
+</item>
+<item historyLabel="gps.h" index="3">
+<position info="not_deleted" x="1410" y="14"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13353" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13474" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13467" y="4"/>
+</item>
+<item historyLabel="gps.h" index="3">
+<position info="not_deleted" x="1058" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13467" y="4"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="10834" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="10842" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="10822" y="4"/>
+</item>
+<item historyLabel="gps.h" index="3">
+<position info="not_deleted" x="629" y="11"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="10822" y="4"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="13630" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14128" y="26"/>
+</item>
+<item historyLabel="gps.h" index="3">
+<position info="not_deleted" x="1796" y="15"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14128" y="26"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14344" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14308" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14340" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14331" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="8193" y="23"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="1003" y="0"/>
+</item>
+<item historyLabel="gps.c" index="2">
+<position info="not_deleted" x="8198" y="15"/>
+</item>
+<item active="true" historyLabel="gps.c" index="2">
+<position info="not_deleted" x="14133" y="15"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -464,11 +467,20 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="GPS_6/main.c">
+<persistable path="/GPS_6/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="GPS_6/main.h">
+<persistable path="/GPS_6/main.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" tooltip="GPS_6/gps.h">
+<persistable path="/GPS_6/gps.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.c" tooltip="GPS_6/gps.c">
+<persistable path="/GPS_6/gps.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" tooltip="gps_5/gps.h">
 <persistable path="/gps_5/gps.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.c" tooltip="gps_5/gps.c">
-<persistable path="/gps_5/gps.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" tooltip="gps_4/gps.h">
 <persistable path="/gps_4/gps.h"/>
@@ -499,15 +511,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" tooltip="gps_3/gps.h">
 <persistable path="/gps_3/gps.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_main.c" tooltip="gps_3_bsp/HAL/src/alt_main.c">
-<persistable path="/gps_3_bsp/HAL/src/alt_main.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="gps_3/main.c">
-<persistable path="/gps_3/main.c"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\altera\13.0sp1\quartus\bin\cygwin\usr\include\stdio.h">
-<persistable path="C:\altera\13.0sp1\quartus\bin\cygwin\usr\include\stdio.h" project="gps"/>
 </file>
 </mruList>
 </workbench>

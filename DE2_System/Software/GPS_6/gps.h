@@ -76,7 +76,7 @@ typedef struct GPGSA_T
 
 typedef struct GPGSA_D_T
 {
-	double	list[12];
+	int		list[12];
 } GPGSA_D_T;
 
 typedef union GPS_LOG_U
@@ -124,6 +124,7 @@ void gps_state_machine_reset	( void );
 void gps_state_machine			( char c );
 void gps_print_log				( void );
 void gps_convert_log			( void );
+void gps_print_error			( void );
 
 
 #endif

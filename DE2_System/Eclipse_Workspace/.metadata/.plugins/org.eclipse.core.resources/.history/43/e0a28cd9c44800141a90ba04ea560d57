@@ -401,7 +401,7 @@ void gps_convert_log(void)
 			converted_log.gpgga_d.time.second  		 = strtol (&temp_log.gpgga.time.second[0], &pEnd, 10);
 
 			/* shift from UTC to MDT */
-			converted_log.gpgga_d.time.hour -= 7;
+			converted_log.gpgga_d.time.hour += -7 +1;
 			if(converted_log.gpgga_d.time.hour < 0)
 			{
 				converted_log.gpgga_d.time.hour += 24;
@@ -449,6 +449,12 @@ void gps_convert_log(void)
 			break;
 
 		case GPGSA:
+
+			/* convert list of SAT ID strings to list of integers */
+			for(i = 0; i < GPS_NUM_SATIDS; i++)
+			{
+				converted_log.gpgsa_d.list[i] = strtol (&temp_log.gpgsa.list[i], &pEnd, 10);
+			}
 
 			break;
 
@@ -501,7 +507,6 @@ void gps_print_log(void)
 			break;
 
 		case GPGGA_D:
-<<<<<<< HEAD
 			if((*Switches & 0x01) == 0x01)
 			{
 				sprintf(s1, "Lat: %3.3f %s", 	temp_log.gpgga_d.lat,
@@ -517,26 +522,16 @@ void gps_print_log(void)
 												temp_log.gpgga_d.alt_unit);
 
 				/* print time */
-				sprintf(s2, "Time: %d:%d:%d %s", temp_log.gpgga_d.time.hour,
+				sprintf(s2, "Time: %02d:%02d:%02d%s", temp_log.gpgga_d.time.hour,
 												temp_log.gpgga_d.time.minute,
 												temp_log.gpgga_d.time.second,
 												temp_log.gpgga_d.time.ampm);
 			}
 
 			WriteLCD(s1, s2);
-=======
-			sprintf(s1, "Lat: %3.3f %s\n", 	temp_log.gpgga_d.lat,
-											temp_log.gpgga_d.lat_dir);
 
-			sprintf(s2, "Lon: %3.3f %s\n", 	temp_log.gpgga_d.lon,
-											temp_log.gpgga_d.lon_dir);
-			//WriteLCD(s1, s2);
-
-			printf(s1);
-			printf(s2);
->>>>>>> parent of 1e26b6b... LCD Works!
-
-			printf("%s\n%s\n", s1, s2);
+			printf("Latitude = %f degrees\n", temp_log.gpgga_d.lat);
+			printf("Longitude = %f degrees\n", temp_log.gpgga_d.lon);
 
 		break;
 			
@@ -554,6 +549,20 @@ void gps_print_log(void)
 			
 			break;
 			
+		case GPGSA_D:
+
+			/* reset LEDs to all off */
+			*LEDs = 0x00000000;
+
+			/* for each SAT ID */
+			for(i = 0; i < GPS_NUM_SATIDS; i++)
+			{
+				/* set the bit number corresponding to the SAT ID number */
+				*LEDs |= (1 << (temp_log.gpgsa_d.list[i]));
+			}
+
+			break;
+
 		default:
 			if(debug_level >= SOME)
 			{
