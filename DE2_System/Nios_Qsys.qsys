@@ -84,19 +84,11 @@
          type = "int";
       }
    }
-   element uart_RS232.s1
+   element sdram_controller_0.s1
    {
       datum baseAddress
       {
-         value = "16781344";
-         type = "String";
-      }
-   }
-   element LEDs.s1
-   {
-      datum baseAddress
-      {
-         value = "16781440";
+         value = "8388608";
          type = "String";
       }
    }
@@ -108,11 +100,19 @@
          type = "String";
       }
    }
-   element sdram_controller_0.s1
+   element LEDs.s1
    {
       datum baseAddress
       {
-         value = "8388608";
+         value = "16781440";
+         type = "String";
+      }
+   }
+   element uart_RS232.s1
+   {
+      datum baseAddress
+      {
+         value = "16781344";
          type = "String";
       }
    }
@@ -147,7 +147,7 @@
  <parameter name="projectName" value="DE2_System.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1411487719385" />
+ <parameter name="timeStamp" value="1412090601914" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />

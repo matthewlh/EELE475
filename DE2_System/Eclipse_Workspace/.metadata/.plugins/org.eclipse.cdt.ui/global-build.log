@@ -219,13 +219,3 @@ make --no-print-directory -C ../gps_4_bsp/
 [gps_4 build complete]
 
 **** Build Finished ****
-
-**** Build of configuration Nios II for project gps_4 ****
-
-make all 
-Info: Building ../gps_4_bsp/
-make --no-print-directory -C ../gps_4_bsp/
-[BSP build complete]
-[gps_4 build complete]
-
-**** Build Finished ****
