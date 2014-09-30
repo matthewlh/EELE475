@@ -491,12 +491,15 @@ void gps_print_log(void)
 			break;
 
 		case GPGGA_D:
-			sprintf(s1, "Lat: %3.3f %s", 	temp_log.gpgga_d.lat,
+			sprintf(s1, "Lat: %3.3f %s\n", 	temp_log.gpgga_d.lat,
 											temp_log.gpgga_d.lat_dir);
 
-			sprintf(s2, "Lon: %3.3f %s", 	temp_log.gpgga_d.lon,
+			sprintf(s2, "Lon: %3.3f %s\n", 	temp_log.gpgga_d.lon,
 											temp_log.gpgga_d.lon_dir);
 			WriteLCD(s1, s2);
+
+			printf(s1);
+			printf(s2);
 
 			printf("Elev:     = %f %s\n", 				temp_log.gpgga_d.alt,
 														temp_log.gpgga_d.alt_unit);
