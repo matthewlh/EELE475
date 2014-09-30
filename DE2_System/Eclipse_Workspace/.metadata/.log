@@ -958,3 +958,28 @@ Command-line arguments:  -data C:\Users\z68j959\Documents\GitHub\EELE475\DE2_Sys
 
 !ENTRY com.altera.sbtgui.launch 1 0 2014-09-23 11:54:09.977
 !MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/gps_4/gps_4.elf]
+!SESSION 2014-09-30 09:49:27.763 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-09-30 09:51:56.975
+!MESSAGE Indexed 'gps_5_bsp' (84 sources, 62 headers) in 0.90 sec: 1,160 declarations; 3,180 references; 125 unresolved inclusions; 5 syntax errors; 230 unresolved names (5.03%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-09-30 09:51:58.379
+!MESSAGE Indexed 'gps_5' (0 sources, 13 headers) in 0.00 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-09-30 09:54:27.836
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-09-30 09:54:29.442
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/gps_5/gps_5.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-09-30 09:55:41.533
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-09-30 09:55:43.140
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/gps_5/gps_5.elf]
