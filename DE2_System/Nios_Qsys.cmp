@@ -18,7 +18,10 @@
 			lcd_data                            : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
 			lcd_E                               : out   std_logic;                                        -- E
 			rs232_rxd                           : in    std_logic                     := 'X';             -- rxd
-			rs232_txd                           : out   std_logic                                         -- txd
+			rs232_txd                           : out   std_logic;                                        -- txd
+			pwm2_conduit_end_export             : out   std_logic;                                        -- export
+			pwm1_conduit_end_export             : out   std_logic;                                        -- export
+			pwm3_conduit_end_export             : out   std_logic                                         -- export
 		);
 	end component Nios_Qsys;
 

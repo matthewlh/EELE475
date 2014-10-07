@@ -258,7 +258,10 @@ architecture behavioral of DE2_Board_top_level is
             lcd_data                            : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
             lcd_E                               : out   std_logic;                                        -- E
             rs232_rxd                           : in    std_logic                     := 'X';             -- rxd
-            rs232_txd                           : out   std_logic                                         -- txd
+            rs232_txd                           : out   std_logic;                                         -- txd
+				pwm2_conduit_end_export             : out   std_logic;                                        -- export
+            pwm1_conduit_end_export             : out   std_logic;                                        -- export
+            pwm3_conduit_end_export             : out   std_logic 
         );
     end component Nios_Qsys;
 	
@@ -287,6 +290,8 @@ architecture behavioral of DE2_Board_top_level is
 	signal dram_ba : std_logic_vector(1 downto 0); 
 	signal dram_dqm : std_logic_vector(1 downto 0); 
 	signal clk_nios : std_logic;
+	
+
 
 begin
 
@@ -320,8 +325,11 @@ begin
             lcd_data                            => LCD_DATA,                            --                             .data
             lcd_E                               => LCD_EN,                               --                             .E
             rs232_rxd                           => UART_RXD,                           --                        rs232.rxd
-            rs232_txd                           => UART_TXD                                  --                             .E
-        );
+            rs232_txd                           => UART_TXD,                                  --                             .E
+				pwm2_conduit_end_export             => GPIO_1(3),             --             pwm2_conduit_end.export
+            pwm1_conduit_end_export             => GPIO_1(1),             --             pwm1_conduit_end.export
+            pwm3_conduit_end_export             => GPIO_1(5)              --             pwm3_conduit_end.export
+        ); 
 	  
   clockPLL_inst : clockPLL PORT MAP (
 		inclk0	=> CLOCK_50,
@@ -362,7 +370,10 @@ begin
 	 
 	-- Expansion Header
 	GPIO_0 <= (others => '0');  -- JP1
-	GPIO_1 <= (others => '0');  -- JP2
+	GPIO_1(35 downto 6) <= (others => '0');  -- JP2
+	GPIO_1(2) <= '0';  -- JP2
+	GPIO_1(4) <= '0';  -- JP2
+	
 	
 	-- VGA video DAC (ADV7123)
 	VGA_R     <= (others => '0');  -- red data
