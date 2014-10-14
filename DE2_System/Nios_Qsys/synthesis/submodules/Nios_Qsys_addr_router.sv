@@ -136,11 +136,11 @@ module Nios_Qsys_addr_router
     // Figure out the number of bits to mask off for each slave span
     // during address decoding
     // -------------------------------------------------------
-    localparam PAD0 = log2ceil(64'h1000000 - 64'h800000); 
-    localparam PAD1 = log2ceil(64'h1001000 - 64'h1000800); 
-    localparam PAD2 = log2ceil(64'h10010a0 - 64'h1001080); 
-    localparam PAD3 = log2ceil(64'h10010c0 - 64'h10010a0); 
-    localparam PAD4 = log2ceil(64'h10010e0 - 64'h10010c0); 
+    localparam PAD0 = log2ceil(64'h1000 - 64'hc00); 
+    localparam PAD1 = log2ceil(64'h1400 - 64'h1000); 
+    localparam PAD2 = log2ceil(64'h1800 - 64'h1400); 
+    localparam PAD3 = log2ceil(64'h1000000 - 64'h800000); 
+    localparam PAD4 = log2ceil(64'h1001000 - 64'h1000800); 
     localparam PAD5 = log2ceil(64'h1001100 - 64'h10010e0); 
     localparam PAD6 = log2ceil(64'h1001140 - 64'h1001130); 
     localparam PAD7 = log2ceil(64'h1001150 - 64'h1001140); 
@@ -194,34 +194,34 @@ module Nios_Qsys_addr_router
         // Sets the channel and destination ID based on the address
         // --------------------------------------------------
 
+    // ( 0xc00 .. 0x1000 )
+    if ( {address[RG:PAD0],{PAD0{1'b0}}} == 25'hc00   ) begin
+            src_channel = 10'b1000000000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
+    end
+
+    // ( 0x1000 .. 0x1400 )
+    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 25'h1000   ) begin
+            src_channel = 10'b0100000000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 7;
+    end
+
+    // ( 0x1400 .. 0x1800 )
+    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 25'h1400   ) begin
+            src_channel = 10'b0010000000;
+            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
+    end
+
     // ( 0x800000 .. 0x1000000 )
-    if ( {address[RG:PAD0],{PAD0{1'b0}}} == 25'h800000   ) begin
+    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 25'h800000   ) begin
             src_channel = 10'b0000010000;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 8;
     end
 
     // ( 0x1000800 .. 0x1001000 )
-    if ( {address[RG:PAD1],{PAD1{1'b0}}} == 25'h1000800   ) begin
+    if ( {address[RG:PAD4],{PAD4{1'b0}}} == 25'h1000800   ) begin
             src_channel = 10'b0000000001;
             src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 2;
-    end
-
-    // ( 0x1001080 .. 0x10010a0 )
-    if ( {address[RG:PAD2],{PAD2{1'b0}}} == 25'h1001080   ) begin
-            src_channel = 10'b1000000000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 7;
-    end
-
-    // ( 0x10010a0 .. 0x10010c0 )
-    if ( {address[RG:PAD3],{PAD3{1'b0}}} == 25'h10010a0   ) begin
-            src_channel = 10'b0100000000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 6;
-    end
-
-    // ( 0x10010c0 .. 0x10010e0 )
-    if ( {address[RG:PAD4],{PAD4{1'b0}}} == 25'h10010c0   ) begin
-            src_channel = 10'b0010000000;
-            src_data[PKT_DEST_ID_H:PKT_DEST_ID_L] = 5;
     end
 
     // ( 0x10010e0 .. 0x1001100 )

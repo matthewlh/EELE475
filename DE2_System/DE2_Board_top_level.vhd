@@ -326,8 +326,8 @@ begin
             lcd_E                               => LCD_EN,                               --                             .E
             rs232_rxd                           => UART_RXD,                           --                        rs232.rxd
             rs232_txd                           => UART_TXD,                                  --                             .E
-				pwm2_conduit_end_export             => GPIO_1(3),             --             pwm2_conduit_end.export
             pwm1_conduit_end_export             => GPIO_1(1),             --             pwm1_conduit_end.export
+				pwm2_conduit_end_export             => GPIO_1(3),             --             pwm2_conduit_end.export
             pwm3_conduit_end_export             => GPIO_1(5)              --             pwm3_conduit_end.export
         ); 
 	  

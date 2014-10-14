@@ -19,6 +19,11 @@
          value = "3";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
    }
    element Switches
    {
@@ -27,9 +32,19 @@
          value = "2";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
    }
    element jtag_uart.avalon_jtag_slave
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
          value = "16781672";
@@ -43,9 +58,19 @@
          value = "0";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element lcd_display.control_slave
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
          value = "16781616";
@@ -59,9 +84,19 @@
          value = "1";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element cpu_nios.jtag_debug_module
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
          value = "16779264";
@@ -75,6 +110,11 @@
          value = "4";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
    }
    element lcd_display
    {
@@ -82,6 +122,11 @@
       {
          value = "6";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
       }
    }
    element pwm1
@@ -108,8 +153,55 @@
          type = "int";
       }
    }
+   element uart_RS232.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "16781536";
+         type = "String";
+      }
+   }
+   element pwm2.s1
+   {
+      datum baseAddress
+      {
+         value = "5120";
+         type = "String";
+      }
+   }
+   element sdram_controller_0.s1
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "8388608";
+         type = "String";
+      }
+   }
+   element pwm3.s1
+   {
+      datum baseAddress
+      {
+         value = "4096";
+         type = "String";
+      }
+   }
    element LEDs.s1
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
          value = "16781632";
@@ -120,47 +212,20 @@
    {
       datum baseAddress
       {
-         value = "16781504";
-         type = "String";
-      }
-   }
-   element pwm2.s1
-   {
-      datum baseAddress
-      {
-         value = "16781472";
+         value = "3072";
          type = "String";
       }
    }
    element Switches.s1
    {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
       datum baseAddress
       {
          value = "16781648";
-         type = "String";
-      }
-   }
-   element sdram_controller_0.s1
-   {
-      datum baseAddress
-      {
-         value = "8388608";
-         type = "String";
-      }
-   }
-   element uart_RS232.s1
-   {
-      datum baseAddress
-      {
-         value = "16781536";
-         type = "String";
-      }
-   }
-   element pwm3.s1
-   {
-      datum baseAddress
-      {
-         value = "16781440";
          type = "String";
       }
    }
@@ -171,6 +236,11 @@
          value = "5";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
+      }
    }
    element uart_RS232
    {
@@ -178,6 +248,11 @@
       {
          value = "7";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "0";
+         type = "boolean";
       }
    }
 }
@@ -195,7 +270,7 @@
  <parameter name="projectName" value="DE2_System.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1412695744237" />
+ <parameter name="timeStamp" value="1413300643578" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk.clk_in" type="clock" dir="end" />
@@ -222,13 +297,13 @@
    type="conduit"
    dir="end" />
  <interface
-   name="pwm2_conduit_end"
-   internal="pwm2.conduit_end"
+   name="pwm1_conduit_end"
+   internal="pwm1.conduit_end"
    type="conduit"
    dir="end" />
  <interface
-   name="pwm1_conduit_end"
-   internal="pwm1.conduit_end"
+   name="pwm2_conduit_end"
+   internal="pwm2.conduit_end"
    type="conduit"
    dir="end" />
  <interface
@@ -343,8 +418,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /><slave name='pwm3.s1' start='0x1001080' end='0x10010A0' /><slave name='pwm2.s1' start='0x10010A0' end='0x10010C0' /><slave name='pwm1.s1' start='0x10010C0' end='0x10010E0' /><slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /><slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /><slave name='LEDs.s1' start='0x1001140' end='0x1001150' /><slave name='Switches.s1' start='0x1001150' end='0x1001160' /><slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /><slave name='pwm3.s1' start='0x1001080' end='0x10010A0' /><slave name='pwm2.s1' start='0x10010A0' end='0x10010C0' /><slave name='pwm1.s1' start='0x10010C0' end='0x10010E0' /><slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /><slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /><slave name='LEDs.s1' start='0x1001140' end='0x1001150' /><slave name='Switches.s1' start='0x1001150' end='0x1001160' /><slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='pwm1.s1' start='0xC00' end='0x1000' /><slave name='pwm3.s1' start='0x1000' end='0x1400' /><slave name='pwm2.s1' start='0x1400' end='0x1800' /><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /><slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /><slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /><slave name='LEDs.s1' start='0x1001140' end='0x1001150' /><slave name='Switches.s1' start='0x1001150' end='0x1001160' /><slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='pwm1.s1' start='0xC00' end='0x1000' /><slave name='pwm3.s1' start='0x1000' end='0x1400' /><slave name='pwm2.s1' start='0x1400' end='0x1800' /><slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /><slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /><slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /><slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /><slave name='LEDs.s1' start='0x1001140' end='0x1001150' /><slave name='Switches.s1' start='0x1001150' end='0x1001160' /><slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone II" />
   <parameter name="internalIrqMaskSystemInfo" value="3" />
@@ -652,64 +727,64 @@
    end="uart_RS232.irq">
   <parameter name="irqNumber" value="1" />
  </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="cpu_nios.data_master"
+   end="pwm2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1400" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="cpu_nios.instruction_master"
+   end="pwm2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1400" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="cpu_nios.data_master"
+   end="pwm3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="13.0"
+   start="cpu_nios.instruction_master"
+   end="pwm3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x1000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="reset" version="13.0" start="clk.clk_reset" end="pwm3.reset" />
+ <connection kind="clock" version="13.0" start="clk.clk" end="pwm3.clock" />
+ <connection kind="clock" version="13.0" start="clk.clk" end="pwm2.clock" />
+ <connection kind="reset" version="13.0" start="clk.clk_reset" end="pwm2.reset" />
  <connection kind="clock" version="13.0" start="clk.clk" end="pwm1.clock" />
  <connection kind="reset" version="13.0" start="clk.clk_reset" end="pwm1.reset" />
  <connection
    kind="avalon"
    version="13.0"
-   start="cpu_nios.instruction_master"
-   end="pwm1.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x010010c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="13.0"
    start="cpu_nios.data_master"
    end="pwm1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x010010c0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection kind="clock" version="13.0" start="clk.clk" end="pwm2.clock" />
- <connection kind="reset" version="13.0" start="clk.clk_reset" end="pwm2.reset" />
- <connection
-   kind="avalon"
-   version="13.0"
-   start="cpu_nios.data_master"
-   end="pwm2.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x010010a0" />
+  <parameter name="baseAddress" value="0x0c00" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
    kind="avalon"
    version="13.0"
    start="cpu_nios.instruction_master"
-   end="pwm2.s1">
+   end="pwm1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x010010a0" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection kind="clock" version="13.0" start="clk.clk" end="pwm3.clock" />
- <connection kind="reset" version="13.0" start="clk.clk_reset" end="pwm3.reset" />
- <connection
-   kind="avalon"
-   version="13.0"
-   start="cpu_nios.data_master"
-   end="pwm3.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01001080" />
-  <parameter name="defaultConnection" value="false" />
- </connection>
- <connection
-   kind="avalon"
-   version="13.0"
-   start="cpu_nios.instruction_master"
-   end="pwm3.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01001080" />
+  <parameter name="baseAddress" value="0x0c00" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2014.10.07.09:38:35</td>
+    <td class="l">2014.10.14.11:33:43</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -237,8 +237,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>010010c0</td>
-    <td class="addr"><span style="color:#989898">0x</span>010010c0</td>
+    <td class="addr"><span style="color:#989898">0x</span>00000c00</td>
+    <td class="addr"><span style="color:#989898">0x</span>00000c00</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -250,8 +250,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>010010a0</td>
-    <td class="addr"><span style="color:#989898">0x</span>010010a0</td>
+    <td class="addr"><span style="color:#989898">0x</span>00001400</td>
+    <td class="addr"><span style="color:#989898">0x</span>00001400</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -263,8 +263,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">s1&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>01001080</td>
-    <td class="addr"><span style="color:#989898">0x</span>01001080</td>
+    <td class="addr"><span style="color:#989898">0x</span>00001000</td>
+    <td class="addr"><span style="color:#989898">0x</span>00001000</td>
    </tr>
   </table>
   <a name="module_clk"> </a>
@@ -516,32 +516,6 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      <tr>
       <td></td>
       <td></td>
-      <td class="from">instruction_master&#160;&#160;</td>
-      <td class="neighbor" rowspan="4">
-       <a href="#module_pwm1">pwm1</a>
-      </td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;s1</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="from">data_master&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
-      <td class="to">&#160;&#160;s1</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td></td>
-      <td></td>
       <td class="from">data_master&#160;&#160;</td>
       <td class="neighbor" rowspan="4">
        <a href="#module_pwm2">pwm2</a>
@@ -571,6 +545,32 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td class="from">data_master&#160;&#160;</td>
       <td class="neighbor" rowspan="4">
        <a href="#module_pwm3">pwm3</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">instruction_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">data_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_pwm1">pwm1</a>
       </td>
      </tr>
      <tr>
@@ -1035,11 +1035,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">instSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /&gt;&lt;slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /&gt;&lt;slave name='pwm3.s1' start='0x1001080' end='0x10010A0' /&gt;&lt;slave name='pwm2.s1' start='0x10010A0' end='0x10010C0' /&gt;&lt;slave name='pwm1.s1' start='0x10010C0' end='0x10010E0' /&gt;&lt;slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /&gt;&lt;slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /&gt;&lt;slave name='LEDs.s1' start='0x1001140' end='0x1001150' /&gt;&lt;slave name='Switches.s1' start='0x1001150' end='0x1001160' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='pwm1.s1' start='0xC00' end='0x1000' /&gt;&lt;slave name='pwm3.s1' start='0x1000' end='0x1400' /&gt;&lt;slave name='pwm2.s1' start='0x1400' end='0x1800' /&gt;&lt;slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /&gt;&lt;slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /&gt;&lt;slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /&gt;&lt;slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /&gt;&lt;slave name='LEDs.s1' start='0x1001140' end='0x1001150' /&gt;&lt;slave name='Switches.s1' start='0x1001150' end='0x1001160' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">dataSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /&gt;&lt;slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /&gt;&lt;slave name='pwm3.s1' start='0x1001080' end='0x10010A0' /&gt;&lt;slave name='pwm2.s1' start='0x10010A0' end='0x10010C0' /&gt;&lt;slave name='pwm1.s1' start='0x10010C0' end='0x10010E0' /&gt;&lt;slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /&gt;&lt;slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /&gt;&lt;slave name='LEDs.s1' start='0x1001140' end='0x1001150' /&gt;&lt;slave name='Switches.s1' start='0x1001150' end='0x1001160' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='pwm1.s1' start='0xC00' end='0x1000' /&gt;&lt;slave name='pwm3.s1' start='0x1000' end='0x1400' /&gt;&lt;slave name='pwm2.s1' start='0x1400' end='0x1800' /&gt;&lt;slave name='sdram_controller_0.s1' start='0x800000' end='0x1000000' /&gt;&lt;slave name='cpu_nios.jtag_debug_module' start='0x1000800' end='0x1001000' /&gt;&lt;slave name='uart_RS232.s1' start='0x10010E0' end='0x1001100' /&gt;&lt;slave name='lcd_display.control_slave' start='0x1001130' end='0x1001140' /&gt;&lt;slave name='LEDs.s1' start='0x1001140' end='0x1001150' /&gt;&lt;slave name='Switches.s1' start='0x1001150' end='0x1001160' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0x1001168' end='0x1001170' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">clockFrequency</td>
@@ -2330,13 +2330,13 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td class="neighbor" rowspan="4">
        <a href="#module_cpu_nios">cpu_nios</a>
       </td>
-      <td class="from">instruction_master&#160;&#160;</td>
+      <td class="from">data_master&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
      </tr>
      <tr>
-      <td class="from">data_master&#160;&#160;</td>
+      <td class="from">instruction_master&#160;&#160;</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
@@ -2378,28 +2378,10 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     <table class="connectionboxes">
      <tr>
       <td class="neighbor" rowspan="4">
-       <a href="#module_clk">clk</a>
-      </td>
-      <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="9">pwm2</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock</td>
-     </tr>
-     <tr>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="4">
        <a href="#module_cpu_nios">cpu_nios</a>
       </td>
       <td class="from">data_master&#160;&#160;</td>
+      <td class="main" rowspan="9">pwm2</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
@@ -2409,6 +2391,24 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_clk">clk</a>
+      </td>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock</td>
+     </tr>
+     <tr>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset</td>
      </tr>
     </table>
    </div>
@@ -2447,28 +2447,10 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
     <table class="connectionboxes">
      <tr>
       <td class="neighbor" rowspan="4">
-       <a href="#module_clk">clk</a>
-      </td>
-      <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="9">pwm3</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;clock</td>
-     </tr>
-     <tr>
-      <td class="from">clk_reset&#160;&#160;</td>
-     </tr>
-     <tr>
-      <td class="to">&#160;&#160;reset</td>
-     </tr>
-     <tr style="height:6px">
-      <td></td>
-     </tr>
-     <tr>
-      <td class="neighbor" rowspan="4">
        <a href="#module_cpu_nios">cpu_nios</a>
       </td>
       <td class="from">data_master&#160;&#160;</td>
+      <td class="main" rowspan="9">pwm3</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
@@ -2478,6 +2460,24 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </tr>
      <tr>
       <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_clk">clk</a>
+      </td>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset</td>
+     </tr>
+     <tr>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock</td>
      </tr>
     </table>
    </div>
@@ -2510,7 +2510,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <table class="blueBar">
    <tr>
     <td class="l">generation took 0.00 seconds</td>
-    <td class="r">rendering took 0.07 seconds</td>
+    <td class="r">rendering took 0.05 seconds</td>
    </tr>
   </table>
  </body>
