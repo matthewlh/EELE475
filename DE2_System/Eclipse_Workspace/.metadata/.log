@@ -2302,3 +2302,33 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 
 !ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 11:47:40.779
 !MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/registers_1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 11:55:29.915
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 11:55:31.490
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/registers_1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:07:29.963
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:07:31.570
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/registers_1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:09:02.474
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:09:04.066
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/registers_1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:11:43.695
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:11:45.287
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/registers_1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:12:48.771
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-10-14 12:12:50.378
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/registers_1.elf]

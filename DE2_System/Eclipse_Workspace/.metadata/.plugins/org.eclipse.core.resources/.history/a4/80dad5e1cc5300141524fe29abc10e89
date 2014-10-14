@@ -68,42 +68,42 @@ int main()
 	*LEDs = 0x00000000;
 
 
-	*PWM1_CTRL 		= -5;
-	*PWM1_PERIOD 	= 0x000f4240;
-	*PWM1_NEUTRAL 	= 0x000124f8;
-	*PWM1_LARGEST 	= 0x000186a0;
-	*PWM1_SMALLEST 	= 0x0000c350;
-	*PWM1_ENABLE 	= 0x00000001;
+	*PWM1_CTRL 		= 0x000002;
+	*PWM1_PERIOD 	= 0x0f4240;
+	*PWM1_NEUTRAL 	= 0x0124f8;
+	*PWM1_LARGEST 	= 0x0186a0;
+	*PWM1_SMALLEST 	= 0x00c350;
+	*PWM1_ENABLE 	= 0x000001;
 
-	printf("PWM1_CTRL\n");
-	printf("\twrote:          -5\n");
-	printf("\treadback:       %d\n", *PWM1_CTRL);
-	printf("\treadback alias: %d\n", *PWM1_CTRL_R);
+	printf("PWM1_CTRL");
+	printf("\twrote:          0x000002\n");
+	printf("\treadback:       0x%08X\n", *PWM1_CTRL);
+	printf("\treadback alias: 0x%08X\n", *PWM1_CTRL_R);
 
-	printf("PWM1_PERIOD\n");
-	printf("\twrote:          0x000F4240\n");
+	printf("PWM1_PERIOD");
+	printf("\twrote:          0x0f4240\n");
 	printf("\treadback:       0x%08X\n", *PWM1_PERIOD);
 	printf("\treadback alias: 0x%08X\n", *PWM1_PERIOD_R);
 
-	printf("PWM1_NEUTRAL\n");
-	printf("\twrote:          0x000124F8\n");
+	printf("PWM1_NEUTRAL");
+	printf("\twrote:          0x0124f8\n");
 	printf("\treadback:       0x%08X\n", *PWM1_NEUTRAL);
 	printf("\treadback alias: 0x%08X\n", *PWM1_NEUTRAL_R);
 
-	printf("PWM1_LARGEST\n");
-	printf("\twrote:          0x000186A0\n");
+	printf("PWM1_LARGEST");
+	printf("\twrote:          0x0124f8\n");
 	printf("\treadback:       0x%08X\n", *PWM1_LARGEST);
 	printf("\treadback alias: 0x%08X\n", *PWM1_LARGEST_R);
 
-	printf("PWM1_SMALLEST\n");
-	printf("\twrote:          0x0000C350\n");
+	printf("PWM1_SMALLEST");
+	printf("\twrote:          0x00c350\n");
 	printf("\treadback:       0x%08X\n", *PWM1_SMALLEST);
 	printf("\treadback alias: 0x%08X\n", *PWM1_SMALLEST_R);
 
-	printf("PWM1_ENABLE\n");
-	printf("\twrote:          0x00000001\n");
-	printf("\treadback:       0x%08X\n", *PWM1_ENABLE);
-	printf("\treadback alias: 0x%08X\n", *PWM1_ENABLE_R);
+	printf("PWM1_CTRL");
+	printf("\twrote:          0x000002\n");
+	printf("\treadback:       0x%08X\n", *PWM1_CTRL);
+	printf("\treadback alias: 0x%08X\n", *PWM1_CTRL_R);
 
 
 

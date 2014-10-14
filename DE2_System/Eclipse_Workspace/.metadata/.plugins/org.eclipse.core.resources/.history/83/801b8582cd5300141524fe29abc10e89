@@ -68,7 +68,7 @@ int main()
 	*LEDs = 0x00000000;
 
 
-	*PWM1_CTRL 		= -5;
+	*PWM1_CTRL 		= 0x00000002;
 	*PWM1_PERIOD 	= 0x000f4240;
 	*PWM1_NEUTRAL 	= 0x000124f8;
 	*PWM1_LARGEST 	= 0x000186a0;
@@ -76,9 +76,9 @@ int main()
 	*PWM1_ENABLE 	= 0x00000001;
 
 	printf("PWM1_CTRL\n");
-	printf("\twrote:          -5\n");
-	printf("\treadback:       %d\n", *PWM1_CTRL);
-	printf("\treadback alias: %d\n", *PWM1_CTRL_R);
+	printf("\twrote:          0x00000002\n");
+	printf("\treadback:       0x%08X\n", *PWM1_CTRL);
+	printf("\treadback alias: 0x%08X\n", *PWM1_CTRL_R);
 
 	printf("PWM1_PERIOD\n");
 	printf("\twrote:          0x000F4240\n");

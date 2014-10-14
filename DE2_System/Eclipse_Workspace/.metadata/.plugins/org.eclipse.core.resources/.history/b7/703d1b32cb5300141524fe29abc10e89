@@ -1,9 +1,9 @@
 /*
  * main.h
  *
- *  Created on: Oct 14, 2014
- *      Author(s): 	Matthew Handley
- *					David Keltgen
+ *  Created on: Sep 23, 2014
+ *      Author: Matthew Handley
+ *      		David Keltgen
  */
 
 #ifndef MAIN_H_
@@ -31,11 +31,11 @@
 #define PWM1_ENABLE 	((volatile int *) (PWM1_Block_1 + 20))
 
 #define PWM1_Block_2 	((PWM1_Block_1) +(BLOCK_SIZE))
-#define PWM1_CTRL_R 	((volatile int *)  PWM1_Block_2)
+#define PWM1_CTRL_R 	((volatile int *) PWM1_Block_2)
 #define PWM1_PERIOD_R 	((volatile int *) (PWM1_Block_2 + 4))
-#define PWM1_NEUTRAL_R 	((volatile int *) (PWM1_Block_2 + 8))
-#define PWM1_LARGEST_R 	((volatile int *) (PWM1_Block_2 + 12))
-#define PWM1_SMALLEST_R ((volatile int *) (PWM1_Block_2 + 16))
+#define PWM1_NEUTRAL_R 	((volatile int *)( PWM1_Block_2 + 8))
+#define PWM1_LARGEST_R 	((volatile int *)( PWM1_Block_2 + 12))
+#define PWM1_SMALLEST_R ((volatile int *)( PWM1_Block_2 + 16))
 #define PWM1_ENABLE_R 	((volatile int *) (PWM1_Block_2 + 20))
 
 
