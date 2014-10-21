@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="30" version="2.0">
+<workbench progressCount="29" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="645" y="-8">
+<window height="768" maximized="true" width="1024" x="-859" y="-22">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -29,13 +29,18 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/registers_1/main.c" title="main.c" tooltip="registers_1/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/registers_1/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1357" selectionTopPixel="995"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Software/lab_07_1/main.c" title="main.c" tooltip="lab_07_1/main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_07_1/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1154" selectionTopPixel="897"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Software/lab_07_1/main.h" title="main.h" tooltip="lab_07_1/main.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_07_1/main.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="910" selectionTopPixel="11"/>
 </editor>
 </editors>
 <views>
@@ -54,7 +59,6 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (1 item)"/>
-<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="297" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="704"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -73,7 +77,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -242,7 +246,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20429544" ratioLeft="390" ratioRight="1519" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.4334764" ratioLeft="404" ratioRight="528" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.72598255" ratioLeft="665" ratioRight="251" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -282,28 +286,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_06_v3/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/registers_1/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/registers_1/main.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_07_1/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_07_1/main.h"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1331" y="0"/>
-</item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="402" y="17"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1534" y="0"/>
-</item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="402" y="17"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1297" y="10"/>
-</item>
-<item historyLabel="main.h" index="1">
-<position info="not_deleted" x="402" y="17"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1297" y="10"/>
-</item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1153" y="0"/>
 </item>
@@ -430,8 +415,29 @@
 <item historyLabel="main.h" index="4">
 <position info="not_deleted" x="865" y="11"/>
 </item>
-<item active="true" historyLabel="main.c" index="3">
-<position info="not_deleted" x="1546" y="11"/>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.h" index="6">
+<position info="not_deleted" x="910" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -451,6 +457,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="lab_07_1/main.h">
+<persistable path="/lab_07_1/main.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="lab_07_1/main.c">
+<persistable path="/lab_07_1/main.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="registers_1/main.h">
 <persistable path="/registers_1/main.h"/>
 </file>
@@ -489,12 +501,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" tooltip="gps_4/gps.h">
 <persistable path="/gps_4/gps.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.c" tooltip="gps_4/gps.c">
-<persistable path="/gps_4/gps.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="gps_4/main.h">
-<persistable path="/gps_4/main.h"/>
 </file>
 </mruList>
 </workbench>

@@ -88,6 +88,7 @@ begin
 						control <= avs_s1_writedata(7 downto 0);
 					elsif wre='0' and re='1' then
 						readdata(7 downto 0) := control;
+						readdata(31 downto 8) := (others => readdata(7));
 					end if;
 					
 				-- Latch pulse_period (address 1)
@@ -140,6 +141,7 @@ begin
 				WHEN x"20" =>
 					if wre='0' and re='1' then
 						readdata(7 downto 0) := control;
+						readdata(31 downto 8) := (others => readdata(7));
 					end if;
 					
 				-- Latch pulse_period (address 1)
