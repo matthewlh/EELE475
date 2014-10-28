@@ -142,8 +142,7 @@ ACDS_VERSION := 13.0sp1
 ELF := lab_08_1.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += ucosii_tutorial.c
-C_SRCS += alt_ucosii_simple_error_check.c
+C_SRCS := alt_ucosii_simple_error_check.c
 CXX_SRCS :=
 ASM_SRCS :=
 

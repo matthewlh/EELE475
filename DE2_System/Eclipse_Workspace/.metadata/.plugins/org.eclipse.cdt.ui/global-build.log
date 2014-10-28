@@ -1,36 +1,60 @@
 
-**** Clean-only build of configuration Nios II for project lab_08_example ****
+**** Build of configuration Nios II for project lab_08_2 ****
 
-make clean 
-[lab_08_example clean complete]
+make all 
+Info: Building ../lab_08_2_bsp/
+make --no-print-directory -C ../lab_08_2_bsp/
+[BSP build complete]
+Info: Compiling alt_ucosii_simple_error_check.c to obj/default/alt_ucosii_simple_error_check.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab_08_2_bsp//UCOSII/inc -I../lab_08_2_bsp//HAL/inc -I../lab_08_2_bsp/ -I../lab_08_2_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/alt_ucosii_simple_error_check.o alt_ucosii_simple_error_check.c
+Info: Compiling gps.c to obj/default/gps.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab_08_2_bsp//UCOSII/inc -I../lab_08_2_bsp//HAL/inc -I../lab_08_2_bsp/ -I../lab_08_2_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/gps.o gps.c
+In file included from alt_ucosii_simple_error_check.c:10:
+alt_ucosii_simple_error_check.h:45:80: warning: no newline at end of file
+gps.c: In function 'gps_state_machine':
+gps.c:339: warning: embedded '\0' in format
+gps.c:339: warning: embedded '\0' in format
+gps.c: In function 'gps_convert_log':
+gps.c:437: warning: embedded '\0' in format
+gps.c:437: warning: embedded '\0' in format
+gps.c:442: warning: embedded '\0' in format
+gps.c:442: warning: embedded '\0' in format
+gps.c:468: warning: embedded '\0' in format
+gps.c:468: warning: embedded '\0' in format
+gps.c:487: warning: passing argument 1 of 'strtol' from incompatible pointer type
+gps.c: In function 'gps_save_string':
+gps.c:515: warning: unused variable 'i'
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../lab_08_2_bsp//UCOSII/inc -I../lab_08_2_bsp//HAL/inc -I../lab_08_2_bsp/ -I../lab_08_2_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+In file included from main.c:30:
+alt_ucosii_simple_error_check.h:45:80: warning: no newline at end of file
+Info: Linking lab_08_2.elf
+nios2-elf-g++  -T'../lab_08_2_bsp//linker.x' -msys-crt0='../lab_08_2_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -L../lab_08_2_bsp/   -Wl,-Map=lab_08_2.map   -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o lab_08_2.elf obj/default/alt_ucosii_simple_error_check.o obj/default/gps.o obj/default/main.o -lm 
+nios2-elf-insert lab_08_2.elf --thread_model ucosii --cpu_name cpu_nios --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev uart_RS232 --stdout_dev jtag_uart --sopc_system_name Nios_Qsys --quartus_project_dir "C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System" --sopcinfo C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Nios_Qsys.sopcinfo
+Info: (lab_08_2.elf) 226 KBytes program size (code + initialized data).
+Info:                7958 KBytes free for stack + heap.
+Info: Creating lab_08_2.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source lab_08_2.elf >lab_08_2.objdump
+[lab_08_2 build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project lab_08_example ****
+**** Build of configuration Nios II for project lab_08_2 ****
 
 make all 
-Info: Building ../lab_08_example_bsp/
-make --no-print-directory -C ../lab_08_example_bsp/
+Info: Building ../lab_08_2_bsp/
+make --no-print-directory -C ../lab_08_2_bsp/
 [BSP build complete]
-Info: Compiling hello_ucosii.c to obj/default/hello_ucosii.o
-nios2-elf-gcc -xc -MP -MMD -c -I../lab_08_example_bsp//UCOSII/inc -I../lab_08_example_bsp//HAL/inc -I../lab_08_example_bsp/ -I../lab_08_example_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -D__ucosii__    -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/hello_ucosii.o hello_ucosii.c
-Info: Linking lab_08_example.elf
-nios2-elf-g++  -T'../lab_08_example_bsp//linker.x' -msys-crt0='../lab_08_example_bsp//obj/HAL/src/crt0.o' -msys-lib=ucosii_bsp -L../lab_08_example_bsp/   -Wl,-Map=lab_08_example.map   -O0 -g -Wall   -EL -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o lab_08_example.elf obj/default/hello_ucosii.o -lm 
-nios2-elf-insert lab_08_example.elf --thread_model ucosii --cpu_name cpu_nios --qsys true --simulation_enabled false --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name Nios_Qsys --quartus_project_dir "C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System" --sopcinfo C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Nios_Qsys.sopcinfo
-Info: (lab_08_example.elf) 108 KBytes program size (code + initialized data).
-Info:                      8076 KBytes free for stack + heap.
-Info: Creating lab_08_example.objdump
-nios2-elf-objdump --disassemble --syms --all-header --source lab_08_example.elf >lab_08_example.objdump
-[lab_08_example build complete]
+[lab_08_2 build complete]
 
 **** Build Finished ****
 
-**** Build of configuration Nios II for project lab_08_example ****
+**** Build of configuration Nios II for project lab_08_2 ****
 
 make all 
-Info: Building ../lab_08_example_bsp/
-make --no-print-directory -C ../lab_08_example_bsp/
+Info: Building ../lab_08_2_bsp/
+make --no-print-directory -C ../lab_08_2_bsp/
 [BSP build complete]
-[lab_08_example build complete]
+[lab_08_2 build complete]
 
 **** Build Finished ****
