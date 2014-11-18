@@ -425,7 +425,7 @@ void gps_convert_log(void)
 			converted_log.gpgga_d.time.second  		 = strtol (&temp_log.gpgga.time.second[0], &pEnd, 10);
 
 			/* shift from UTC to MDT */
-			converted_log.gpgga_d.time.hour += -7 +1;
+			converted_log.gpgga_d.time.hour += -7;
 			if(converted_log.gpgga_d.time.hour < 0)
 			{
 				converted_log.gpgga_d.time.hour += 24;

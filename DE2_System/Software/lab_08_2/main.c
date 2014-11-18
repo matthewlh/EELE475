@@ -74,7 +74,6 @@ extern char GGA_lat[20];            // variable for writing GGA values to LCD
 extern char GGA_lon[20];			// variable for writing GGA values to LCD
 extern char GGA_elev[20];            // variable for writing GSA values to LCD
 extern char GGA_time[20];			// variable for writing GSA values to LCD
-
 /* Local Function Prototypes */
 int initOSDataStructs(void);
 int initCreateTasks(void);
@@ -97,6 +96,8 @@ void get_gps_task (void* pdata)
 void display_task (void* pdata)
 {
 	int switch_num;
+	char PWMs1[20];
+	char PWMs2[20];
 	/* reset LEDs to all off */
 	*LEDs = 0x00000000;
 	while(1)
@@ -111,7 +112,9 @@ void display_task (void* pdata)
 			WriteLCD(GGA_elev, GGA_time);
 			break;
 		case 2:
-			//WriteLCD()
+			/* Write out PWM values */
+			formatPWMStr(&PWMs1, &PWMs2);
+			WriteLCD(PWMs1, PWMs2);
 			break;
 		default:
 			break;
@@ -121,21 +124,94 @@ void display_task (void* pdata)
 	}
 }
 
-/* this task control the value sent to pwm1, incrementing from -127 to 128 in steps of 10
- * then decrementing from 128 to -127 in steps of 10
+/* this task control the value sent to pwm1, incrementing from -127 to 128 in steps of 10 every 1/2 second
+ * then decrementing from 128 to -127 in steps of 10 every 1/2 second
  */
 void pwm1_cntl_task (void* pdata)
 {
+	/* if 1, increment, if 0 decrement */
+	int increment = 1;
+
+	*PWM1_CTRL 		= -128;
+	*PWM1_PERIOD 	= 0x000f4240;
+	*PWM1_NEUTRAL 	= 0x000124f8;
+	*PWM1_LARGEST 	= 0x000186a0;
+	*PWM1_SMALLEST 	= 0x0000c350;
+	*PWM1_ENABLE 	= 0x00000001;
+
+
+
+	while(1) {
+
+		/* Increment */
+		if (increment == 1) {
+			if((*PWM1_CTRL + 10) >=  127) {
+				increment = 0;
+				*PWM1_CTRL-=10;
+			}
+			else {
+				*PWM1_CTRL+=10;
+			}
+
+		}
+		else {
+			/* Decrement */
+			if((*PWM1_CTRL - 10) <=  -128) {
+				increment = 1;
+				*PWM1_CTRL+=10;
+			}
+			else {
+				*PWM1_CTRL-=10;
+			}
+		}
+		OSTimeDlyHMSM(0,0,0,500);
+	}
 
 }
 
 
-/* this task control the value sent to pwm2, incrementing from -127 to 128 in steps of 10
- * then decrementing from 128 to -127 in steps of 10
+/* this task control the value sent to pwm2, incrementing from -127 to 128 in steps of 10 every 1/2 second
+ * then decrementing from 128 to -127 in steps of 10 every 1/2 second
  */
 void pwm2_cntl_task (void* pdata)
 {
+	/* if 1, increment, if 0 decrement */
+	int increment = 1;
 
+	*PWM2_CTRL 		= -128;
+	*PWM2_PERIOD 	= 0x000f4240;
+	*PWM2_NEUTRAL 	= 0x000124f8;
+	*PWM2_LARGEST 	= 0x000186a0;
+	*PWM2_SMALLEST 	= 0x0000c350;
+	*PWM2_ENABLE 	= 0x00000001;
+
+
+
+	while(1) {
+
+		/* Increment */
+		if (increment == 1) {
+			if((*PWM2_CTRL + 10) >=  127) {
+				increment = 0;
+				*PWM2_CTRL-=10;
+			}
+			else {
+				*PWM2_CTRL+=10;
+			}
+
+		}
+		else {
+			/* Decrement */
+			if((*PWM2_CTRL - 10) <=  -128) {
+				increment = 1;
+				*PWM2_CTRL+=10;
+			}
+			else {
+				*PWM2_CTRL-=10;
+			}
+		}
+		OSTimeDlyHMSM(0,0,0,333);
+	}
 }
 
 /* The following task is used to initialize the operating system data structures
@@ -220,7 +296,36 @@ int initCreateTasks(void)
                                  NULL,
                                  0);
   alt_ucosii_check_return_code(return_code);
+
+  return_code = OSTaskCreateExt(pwm1_cntl_task,
+                                 NULL,
+                                 (void *)&pwm1_cntl_task_stk[TASK_STACKSIZE],
+                                 PWM1_CNTL_TASK_PRIORITY,
+                                 PWM1_CNTL_TASK_PRIORITY,
+                                 pwm1_cntl_task_stk,
+                                 TASK_STACKSIZE,
+                                 NULL,
+                                 0);
+  alt_ucosii_check_return_code(return_code);
+
+  return_code = OSTaskCreateExt(pwm2_cntl_task,
+                                 NULL,
+                                 (void *)&pwm2_cntl_task_stk[TASK_STACKSIZE],
+                                 PWM2_CNTL_TASK_PRIORITY,
+                                 PWM2_CNTL_TASK_PRIORITY,
+                                 pwm2_cntl_task_stk,
+                                 TASK_STACKSIZE,
+                                 NULL,
+                                 0);
+  alt_ucosii_check_return_code(return_code);
   return 0;
+}
+
+void formatPWMStr(char* s1, char* s2)
+{
+	/* print altitude */
+	sprintf(s1, "PWM1 : %d", *PWM1_CTRL_R);
+	sprintf(s2, "PWM2 : %d", *PWM2_CTRL_R);
 }
 
 void WriteLCD( char* string1, char* string2)
