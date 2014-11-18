@@ -261,7 +261,8 @@ architecture behavioral of DE2_Board_top_level is
             rs232_txd                           : out   std_logic;                                         -- txd
 				pwm2_conduit_end_export             : out   std_logic;                                        -- export
             pwm1_conduit_end_export             : out   std_logic;                                        -- export
-            pwm3_conduit_end_export             : out   std_logic 
+            pwm3_conduit_end_export             : out   std_logic;
+            buttons_pio_external_connection_export : in    std_logic_vector(2 downto 0)  := (others => 'X')  -- export	
         );
     end component Nios_Qsys;
 	
@@ -328,7 +329,9 @@ begin
             rs232_txd                           => UART_TXD,                                  --                             .E
             pwm1_conduit_end_export             => GPIO_1(1),             --             pwm1_conduit_end.export
 				pwm2_conduit_end_export             => GPIO_1(3),             --             pwm2_conduit_end.export
-            pwm3_conduit_end_export             => GPIO_1(5)              --             pwm3_conduit_end.export
+            pwm3_conduit_end_export             => GPIO_1(5),              --             pwm3_conduit_end.export
+				buttons_pio_external_connection_export => KEY(3 downto 1)  -- buttons_pio_external_connection.export
+
         ); 
 	  
   clockPLL_inst : clockPLL PORT MAP (

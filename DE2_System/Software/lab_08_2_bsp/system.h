@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_nios' in SOPC Builder design 'Nios_Qsys'
  * SOPC Builder design path: C:/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Nios_Qsys.sopcinfo
  *
- * Generated: Tue Oct 28 11:14:17 MDT 2014
+ * Generated: Tue Nov 18 10:33:29 MST 2014
  */
 
 /*
@@ -53,6 +53,33 @@
 
 /* Include definitions from linker script generator */
 #include "linker.h"
+
+
+/*
+ * BUTTONS_PIO configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_BUTTONS_PIO altera_avalon_pio
+#define BUTTONS_PIO_BASE 0x0
+#define BUTTONS_PIO_BIT_CLEARING_EDGE_REGISTER 0
+#define BUTTONS_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define BUTTONS_PIO_CAPTURE 1
+#define BUTTONS_PIO_DATA_WIDTH 3
+#define BUTTONS_PIO_DO_TEST_BENCH_WIRING 0
+#define BUTTONS_PIO_DRIVEN_SIM_VALUE 0
+#define BUTTONS_PIO_EDGE_TYPE "ANY"
+#define BUTTONS_PIO_FREQ 50000000
+#define BUTTONS_PIO_HAS_IN 1
+#define BUTTONS_PIO_HAS_OUT 0
+#define BUTTONS_PIO_HAS_TRI 0
+#define BUTTONS_PIO_IRQ 3
+#define BUTTONS_PIO_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define BUTTONS_PIO_IRQ_TYPE "EDGE"
+#define BUTTONS_PIO_NAME "/dev/BUTTONS_PIO"
+#define BUTTONS_PIO_RESET_VALUE 0
+#define BUTTONS_PIO_SPAN 16
+#define BUTTONS_PIO_TYPE "altera_avalon_pio"
 
 
 /*

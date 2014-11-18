@@ -3889,3 +3889,21 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.
 
 !ENTRY com.altera.sbtgui.launch 1 0 2014-11-18 09:51:57.582
 !MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Software/lab_08_2/lab_08_2.elf]
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-11-18 10:04:13.132
+!MESSAGE Indexed 'lab_09_1_bsp' (87 sources, 65 headers) in 0.95 sec: 1,184 declarations; 3,291 references; 129 unresolved inclusions; 5 syntax errors; 234 unresolved names (4.97%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-11-18 10:04:14.380
+!MESSAGE Indexed 'lab_09_1' (0 sources, 13 headers) in 0.02 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-11-18 10:23:46.297
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-11-18 10:23:48.060
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Software/lab_09_1/lab_09_1.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-11-18 10:27:18.422
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-11-18 10:27:20.045
+!MESSAGE Executing: [C:/altera/13.0sp1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/w92p177/Documents/GitHub/EELE475/DE2_System/Software/lab_09_1/lab_09_1.elf]

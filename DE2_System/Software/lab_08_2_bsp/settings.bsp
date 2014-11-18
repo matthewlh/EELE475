@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Nov 18, 2014 9:10:41 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1416327041999</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Nov 18, 2014 10:33:28 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1416332008923</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\w92p177\Documents\GitHub\EELE475\DE2_System\Software\lab_08_2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\w92p177\Documents\GitHub\EELE475\DE2_System\Nios_Qsys.sopcinfo</SopcDesignFile>
@@ -1726,6 +1726,12 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
+        <MemoryMap>
+                <slaveDescriptor>BUTTONS_PIO</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000000F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>pwm1</slaveDescriptor>
                 <addressRange>0x00000C00 - 0x00000FFF</addressRange>
