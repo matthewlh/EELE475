@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="35" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="513" y="-20">
 <fastViewData fastViewLocation="1024"/>
@@ -13,13 +13,13 @@
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -28,10 +28,41 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="count_binary.c" partName="count_binary.c" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/lab_09_2/count_binary.c" title="count_binary.c" tooltip="lab_09_2/count_binary.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_09_2/count_binary.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2602" selectionTopPixel="3555"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="count_binary.h" partName="count_binary.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/lab_09_2/count_binary.h" title="count_binary.h" tooltip="lab_09_2/count_binary.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_09_2/count_binary.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="479" selectionTopPixel="134"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="alt_sys_init.c" partName="alt_sys_init.c" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/lab_09_2_bsp/alt_sys_init.c" title="alt_sys_init.c" tooltip="lab_09_2_bsp/alt_sys_init.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_09_2_bsp/alt_sys_init.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="3230" selectionTopPixel="1005"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" partName="system.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/lab_09_2_bsp/system.h" title="system.h" tooltip="lab_09_2_bsp/system.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_09_2_bsp/system.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11732" selectionTopPixel="5865"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="altera_avalon_pio_regs.h" partName="altera_avalon_pio_regs.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/lab_09_2_bsp/drivers/inc/altera_avalon_pio_regs.h" title="altera_avalon_pio_regs.h" tooltip="lab_09_2_bsp/drivers/inc/altera_avalon_pio_regs.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_09_2_bsp/drivers/inc/altera_avalon_pio_regs.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="31" selectionOffset="3253" selectionTopPixel="299"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="altera_avalon_uart_regs.h" partName="altera_avalon_uart_regs.h" path="C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Software/lab_09_2_bsp/drivers/inc/altera_avalon_uart_regs.h" title="altera_avalon_uart_regs.h" tooltip="lab_09_2_bsp/drivers/inc/altera_avalon_uart_regs.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lab_09_2_bsp/drivers/inc/altera_avalon_uart_regs.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="30" selectionOffset="2643" selectionTopPixel="314"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -40,15 +71,14 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
 </viewState>
 </view>
 <view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
@@ -69,7 +99,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.altera.sbtgui.ui.cPerspective">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="com.altera.sbtgui.ui.cPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -238,8 +268,8 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.20429544" ratioLeft="390" ratioRight="1519" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.49785408" ratioLeft="464" ratioRight="468" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.62982833" ratioLeft="587" ratioRight="345" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.altera.sbtgui.launch.hardware.ByteStreamConsoleView:USB-Blaster on localhost [USB-0].1.0" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -271,7 +301,167 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2/count_binary.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2_bsp/alt_sys_init.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2_bsp/system.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2_bsp/drivers/inc/altera_avalon_pio_regs.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2_bsp/drivers/inc/altera_avalon_uart_regs.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/lab_09_2/count_binary.h"/>
+</editors>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="6432" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="5098" y="9"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="5244" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="6714" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="6020" y="9"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="6056" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="5098" y="9"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="6100" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="11199" y="0"/>
+</item>
+<item historyLabel="alt_sys_init.c" index="1">
+<position info="not_deleted" x="3230" y="18"/>
+</item>
+<item historyLabel="system.h" index="2">
+<position info="not_deleted" x="11732" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="11199" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="10022" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="2888" y="16"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position/>
+</item>
+<item historyLabel="altera_avalon_pio_regs.h" index="3">
+<position info="not_deleted" x="3087" y="31"/>
+</item>
+<item historyLabel="altera_avalon_jtag_uart_regs.h" index="4">
+<position info="not_deleted" x="2817" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="2874" y="0"/>
+</item>
+<item historyLabel="altera_avalon_jtag_uart_regs.h" index="4">
+<position info="not_deleted" x="2468" y="32"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="2874" y="0"/>
+</item>
+<item historyLabel="altera_avalon_uart_regs.h" index="5">
+<position info="not_deleted" x="2667" y="6"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3114" y="31"/>
+</item>
+<item historyLabel="altera_avalon_uart_regs.h" index="5">
+<position info="not_deleted" x="2667" y="6"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3124" y="0"/>
+</item>
+<item historyLabel="altera_avalon_pio_regs.h" index="3">
+<position info="not_deleted" x="3087" y="31"/>
+</item>
+<item historyLabel="altera_avalon_uart_regs.h" index="5">
+<position info="not_deleted" x="2667" y="6"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3124" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3325" y="16"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3386" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="1458" y="24"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3024" y="16"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3360" y="16"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3384" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="1458" y="24"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3387" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="1458" y="24"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="1634" y="0"/>
+</item>
+<item historyLabel="altera_avalon_pio_regs.h" index="3">
+<position info="not_deleted" x="3253" y="31"/>
+</item>
+<item historyLabel="altera_avalon_uart_regs.h" index="5">
+<position info="not_deleted" x="2667" y="6"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="2832" y="0"/>
+</item>
+<item historyLabel="altera_avalon_uart_regs.h" index="5">
+<position info="not_deleted" x="2643" y="30"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="1512" y="0"/>
+</item>
+<item historyLabel="count_binary.h" index="6">
+<position info="not_deleted" x="919" y="8"/>
+</item>
+<item historyLabel="count_binary.h" index="6">
+<position info="not_deleted" x="479" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="1512" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="2832" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="9615" y="0"/>
+</item>
+<item historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="10042" y="0"/>
+</item>
+<item active="true" historyLabel="count_binary.c" index="0">
+<position info="not_deleted" x="3424" y="9"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -289,6 +479,27 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="altera_avalon_uart_regs.h" tooltip="lab_09_2_bsp/drivers/inc/altera_avalon_uart_regs.h">
+<persistable path="/lab_09_2_bsp/drivers/inc/altera_avalon_uart_regs.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="altera_avalon_jtag_uart_regs.h" tooltip="lab_09_2_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h">
+<persistable path="/lab_09_2_bsp/drivers/inc/altera_avalon_jtag_uart_regs.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="altera_avalon_pio_regs.h" tooltip="lab_09_2_bsp/drivers/inc/altera_avalon_pio_regs.h">
+<persistable path="/lab_09_2_bsp/drivers/inc/altera_avalon_pio_regs.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system.h" tooltip="lab_09_2_bsp/system.h">
+<persistable path="/lab_09_2_bsp/system.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="alt_sys_init.c" tooltip="lab_09_2_bsp/alt_sys_init.c">
+<persistable path="/lab_09_2_bsp/alt_sys_init.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="count_binary.h" tooltip="lab_09_2/count_binary.h">
+<persistable path="/lab_09_2/count_binary.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="count_binary.c" tooltip="lab_09_2/count_binary.c">
+<persistable path="/lab_09_2/count_binary.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="lab_08_2/main.c">
 <persistable path="/lab_08_2/main.c"/>
 </file>
@@ -312,27 +523,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="lab_07_1/main.h">
 <persistable path="/lab_07_1/main.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="lab_07_1/main.c">
-<persistable path="/lab_07_1/main.c"/>
-</file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\altera\13.0sp1\quartus\bin\cygwin\usr\include\stdio.h">
-<persistable path="C:\altera\13.0sp1\quartus\bin\cygwin\usr\include\stdio.h" project="lab_08_2"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.h" tooltip="lab_08_2/gps.h">
-<persistable path="/lab_08_2/gps.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gps.c" tooltip="lab_08_2/gps.c">
-<persistable path="/lab_08_2/gps.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ucosii_tutorial.c" tooltip="lab_08_2/ucosii_tutorial.c">
-<persistable path="/lab_08_2/ucosii_tutorial.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.make.editor" name="Makefile" tooltip="lab_08_1/Makefile">
-<persistable path="/lab_08_1/Makefile"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hello_ucosii.c" tooltip="lab_08_example/hello_ucosii.c">
-<persistable path="/lab_08_example/hello_ucosii.c"/>
 </file>
 </mruList>
 </workbench>
