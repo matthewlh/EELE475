@@ -257,11 +257,6 @@ architecture behavioral of DE2_Board_top_level is
             lcd_RW                              : out   std_logic;                                        -- RW
             lcd_data                            : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- data
             lcd_E                               : out   std_logic;                                        -- E
-            rs232_rxd                           : in    std_logic                     := 'X';             -- rxd
-            rs232_txd                           : out   std_logic;                                         -- txd
-				pwm2_conduit_end_export             : out   std_logic;                                        -- export
-            pwm1_conduit_end_export             : out   std_logic;                                        -- export
-            pwm3_conduit_end_export             : out   std_logic;
             buttons_pio_external_connection_export : in    std_logic_vector(2 downto 0)  := (others => 'X')  -- export	
         );
     end component Nios_Qsys;
@@ -325,11 +320,6 @@ begin
             lcd_RW                              => LCD_RW,                              --                             .RW
             lcd_data                            => LCD_DATA,                            --                             .data
             lcd_E                               => LCD_EN,                               --                             .E
-            rs232_rxd                           => UART_RXD,                           --                        rs232.rxd
-            rs232_txd                           => UART_TXD,                                  --                             .E
-            pwm1_conduit_end_export             => GPIO_1(1),             --             pwm1_conduit_end.export
-				pwm2_conduit_end_export             => GPIO_1(3),             --             pwm2_conduit_end.export
-            pwm3_conduit_end_export             => GPIO_1(5),              --             pwm3_conduit_end.export
 				buttons_pio_external_connection_export => KEY(3 downto 1)  -- buttons_pio_external_connection.export
 
         ); 

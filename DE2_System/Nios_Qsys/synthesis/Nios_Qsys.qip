@@ -2,7 +2,7 @@ set_global_assignment -entity "Nios_Qsys" -library "Nios_Qsys" -name IP_TOOL_NAM
 set_global_assignment -entity "Nios_Qsys" -library "Nios_Qsys" -name IP_TOOL_VERSION "13.0sp1"
 set_global_assignment -entity "Nios_Qsys" -library "Nios_Qsys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "Nios_Qsys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../Nios_Qsys.sopcinfo"]
-set_instance_assignment -entity "Nios_Qsys" -library "Nios_Qsys" -name SLD_INFO "QSYS_NAME Nios_Qsys HAS_SOPCINFO 1 GENERATION_ID 1416932897"
+set_instance_assignment -entity "Nios_Qsys" -library "Nios_Qsys" -name SLD_INFO "QSYS_NAME Nios_Qsys HAS_SOPCINFO 1 GENERATION_ID 1416940989"
 set_global_assignment -library "Nios_Qsys" -name MISC_FILE [file join $::quartus(qip_path) "../../Nios_Qsys.cmp"]
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "Nios_Qsys" -name MISC_FILE [file join $::quartus(qip_path) "../../Nios_Qsys.qsys"]
@@ -23,9 +23,8 @@ set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus
 set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_jtag_uart_avalon_jtag_slave_translator.vhd"]
 set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_sdram_controller_0_s1_translator.vhd"]
 set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_lcd_display_control_slave_translator.vhd"]
-set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_uart_rs232_s1_translator.vhd"]
-set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_pwm2_s1_translator.vhd"]
 set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_sys_clk_timer_s1_translator.vhd"]
+set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "nios_qsys_programable_crc_module_0_s1_translator.vhd"]
 set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_irq_mapper.sv"]
 set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
 set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
@@ -47,11 +46,9 @@ set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $
 set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
 set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
 set_global_assignment -library "Nios_Qsys" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/crc_avalon.vhd"]
 set_global_assignment -library "Nios_Qsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_BUTTONS_PIO.v"]
 set_global_assignment -library "Nios_Qsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_sys_clk_timer.v"]
-set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pwm_avalon.vhd"]
-set_global_assignment -library "Nios_Qsys" -name VHDL_FILE [file join $::quartus(qip_path) "submodules/pwm_control.vhd"]
-set_global_assignment -library "Nios_Qsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_uart_RS232.v"]
 set_global_assignment -library "Nios_Qsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_lcd_display.v"]
 set_global_assignment -library "Nios_Qsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_sdram_controller_0.v"]
 set_global_assignment -library "Nios_Qsys" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/Nios_Qsys_jtag_uart.v"]
@@ -122,9 +119,6 @@ set_global_assignment -entity "Nios_Qsys_BUTTONS_PIO" -library "Nios_Qsys" -name
 set_global_assignment -entity "Nios_Qsys_sys_clk_timer" -library "Nios_Qsys" -name IP_TOOL_NAME "altera_avalon_timer"
 set_global_assignment -entity "Nios_Qsys_sys_clk_timer" -library "Nios_Qsys" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "Nios_Qsys_sys_clk_timer" -library "Nios_Qsys" -name IP_TOOL_ENV "Qsys"
-set_global_assignment -entity "Nios_Qsys_uart_RS232" -library "Nios_Qsys" -name IP_TOOL_NAME "altera_avalon_uart"
-set_global_assignment -entity "Nios_Qsys_uart_RS232" -library "Nios_Qsys" -name IP_TOOL_VERSION "13.0.1.99.2"
-set_global_assignment -entity "Nios_Qsys_uart_RS232" -library "Nios_Qsys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -entity "Nios_Qsys_lcd_display" -library "Nios_Qsys" -name IP_TOOL_NAME "altera_avalon_lcd_16207"
 set_global_assignment -entity "Nios_Qsys_lcd_display" -library "Nios_Qsys" -name IP_TOOL_VERSION "13.0.1.99.2"
 set_global_assignment -entity "Nios_Qsys_lcd_display" -library "Nios_Qsys" -name IP_TOOL_ENV "Qsys"
