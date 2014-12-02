@@ -48,13 +48,15 @@ architecture behavior of crc_avalon is
 					fifo_empty		: out STD_LOGIC;		-- FIFO empty status flag
 					fifo_full		: out STD_LOGIC;		-- FIFO full status flag
 					complete			: out STD_LOGIC;		-- calculation complete
+					reset_shift    : in  STD_LOGIC;		-- clears shift register
+					shift_change   : in  STD_LOGIC;     -- goes high when shift register changes
 					
 					vword   			: in STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the FIFO
 					dwidth  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Width of a data word
 					plen  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Polynomial width
 					poly 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Polynomial coefficients
 
-					FIFO 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
+					--FIFO 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
 					SHIFT 			: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
 					RESULT 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- The CRC calculation result.
 		);
@@ -63,6 +65,8 @@ architecture behavior of crc_avalon is
 	signal wre  : std_logic;
 	signal re   : std_logic;
 	signal addr : std_logic_vector(7 downto 0);
+	signal reset_shift    : STD_LOGIC;		-- clears shift register
+	signal shift_change   : STD_LOGIC;     -- goes high when shift register changes
 	
 	-- control register
 	signal enable				: STD_LOGIC;
@@ -76,7 +80,7 @@ architecture behavior of crc_avalon is
 	signal plen  				: STD_LOGIC_VECTOR ( 5 downto 0); 	-- Polynomial width
 	signal poly 				: STD_LOGIC_VECTOR (31 downto 0); 	-- Polynomial coefficients
 	
-	signal FIFO 				: STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
+	--signal FIFO 				: STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
 	signal SHIFT 				: STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
 	signal RESULT 				: STD_LOGIC_VECTOR (31 downto 0); 	-- The CRC calculation result.
 
@@ -161,15 +165,16 @@ begin
 				-- Latch FIFO word (address 0)
 				WHEN x"20" =>
 					if wre='1' and re='0' then
-						FIFO <= avs_s1_writedata(31 downto 0);
+						--FIFO <= avs_s1_writedata(31 downto 0);
 					elsif wre='0' and re='1' then
-						readdata(31 downto 0) := FIFO;		
+						readdata(31 downto 0) := x"00000000";		
 					end if;
 			
 				-- Latch SHIFT word (address 0)
 				WHEN x"21" =>
 					if wre='1' and re='0' then
 						SHIFT <= avs_s1_writedata(31 downto 0);
+						shift_change <= not shift_change;
 					elsif wre='0' and re='1' then
 						readdata(31 downto 0) := SHIFT;		
 					end if;
@@ -205,13 +210,15 @@ begin
 				fifo_empty		=> fifo_empty,
 				fifo_full		=> fifo_full,
 				complete			=> complete,
+				reset_shift 	=> reset_shift, 
+				shift_change   => shift_change,
 
 				vword   			=> vword,
 				dwidth  			=> dwidth,
 				plen  			=> plen,
 				poly 				=> poly,
 
-				FIFO 				=> FIFO,
+				--FIFO 				=> FIFO,
 				SHIFT 			=> SHIFT,
 				RESULT 			=> RESULT
 	);
