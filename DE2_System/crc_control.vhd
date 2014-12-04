@@ -63,6 +63,12 @@ begin
 	
 	-- for debugging
 	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0));
+--	RESULT(0) <= shift_change;
+--	RESULT(1) <= shift_change_last;
+--	RESULT(2) <= '1' when ((start = '0') and (enable = '1')) else '0';
+--	RESULT(3) <= '1' when ((shift_change /= shift_change_last)) else '0';
+--	
+--	RESULT(31 downto 4) <= (others => '0');
 
 	--------------------------------------------------
 	-- configures the width of the data if it changes
@@ -127,7 +133,7 @@ begin
 	begin
 		if(rising_edge(clk)) then 
 		
-			if((reset = '0') or (reset_shift = '1')) then
+			if((reset = '1') or (reset_shift = '1')) then
 				data <= (others => '0'); 
 				pointer <= 0;
 				

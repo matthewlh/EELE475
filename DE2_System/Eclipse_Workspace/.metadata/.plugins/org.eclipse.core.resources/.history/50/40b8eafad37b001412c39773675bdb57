@@ -1,0 +1,21 @@
+/*************************************************************************
+* file: main.c
+* Name: Matthew Handley
+* 		David Keltgen
+* Date: 2014-11-25
+*
+*************************************************************************/
+
+#include "main.h"
+
+int main(void)
+{
+	/* init CRC registers */
+	*CRC_CTRL = CRC_CTRL_MSK_EN;	//set enable bit
+	*CRC_DWIDTH = 4;
+
+	/* shift some data in */
+
+
+	return 0;
+}

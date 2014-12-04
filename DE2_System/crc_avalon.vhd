@@ -187,7 +187,7 @@ begin
 						readdata(31 downto 0) := RESULT;		
 					end if;
 					
-				WHEN OTHERS =>  readdata := x"00000000";
+				WHEN OTHERS =>  readdata := x"F000000F";
 				
 			end CASE;
 			
