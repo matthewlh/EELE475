@@ -170,7 +170,7 @@ begin
 						readdata(31 downto 0) := x"00000000";		
 					end if;
 			
-				-- Latch SHIFT word (address 0)
+				-- Latch SHIFT word (address 1)
 				WHEN x"21" =>
 					if wre='1' and re='0' then
 						SHIFT <= avs_s1_writedata(31 downto 0);
@@ -179,7 +179,7 @@ begin
 						readdata(31 downto 0) := SHIFT;		
 					end if;
 			
-				-- Latch RESULT word (address 0)
+				-- Latch RESULT word (address 2)
 				WHEN x"22" =>
 					if wre='1' and re='0' then
 						-- Writes ignored
