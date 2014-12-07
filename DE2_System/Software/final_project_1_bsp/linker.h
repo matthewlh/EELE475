@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_nios' in SOPC Builder design 'Nios_Qsys'
  * SOPC Builder design path: C:/Users/z68j959/Documents/GitHub/EELE475/DE2_System/Nios_Qsys.sopcinfo
  *
- * Generated: Thu Dec 04 09:23:01 MST 2014
+ * Generated: Sun Dec 07 13:47:02 MST 2014
  */
 
 /*

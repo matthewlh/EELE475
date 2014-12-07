@@ -15,7 +15,7 @@ int main(void)
 
 	/* init CRC registers */
 	*CRC_CTRL = CRC_CTRL_MSK_EN;	// set enable bit
-	*CRC_DWIDTH = 3;				// data will be written to SHIFT 3 bits at a time
+	*CRC_DWIDTH = 3;				// data will be written to SHIFT 4 bits at a time
 	*CRC_PLEN 	= 4;				//
 	*CRC_POLY 	= 0x0B;				//
 

@@ -35,7 +35,7 @@ entity crc_control is
 				reset_shift    : in  STD_LOGIC;		-- clears shift register
 				shift_change   : in  STD_LOGIC;     -- goes high when shift register changes
 				
-				vword   			: in STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the FIFO
+				vword   			: out STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the shift register
 				dwidth  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Width of a data word
 				plen  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Polynomial width
 				poly 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Polynomial coefficients
@@ -47,22 +47,48 @@ entity crc_control is
 end entity;
 
 architecture Behavioral of crc_control is
+
+	constant shift_reg_size : integer := 256;	-- 32 bytes
 	
 	signal complete_local		: STD_LOGIC;
-	signal data 					: unsigned (8191 downto 0);		-- 1024 bytes
-	signal pointer					: integer range 0 to 8191;     			-- keep track of location in data 
+	signal data 					: unsigned (shift_reg_size downto 0);		
+	signal shift_reg				: unsigned (shift_reg_size downto 0);
+	signal vword_int 				: integer range 0 to 65535;
+	signal pointer					: integer range 0 to shift_reg_size;     			-- keep track of location in data 
+	signal pointer_calc			: integer range 0 to shift_reg_size;     			-- keep track of location in data 
+	signal plen_int				: integer range 0 to shift_reg_size;     			-- 
 	signal dwidth_int 			: integer range 0 to 31;               --
 	signal data_mask  			: STD_LOGIC_VECTOR (31 downto 0);        --
 	signal dwidth_last  			: STD_LOGIC_VECTOR (5 downto 0);		--
 	signal shift_change_last 	: STD_LOGIC;
-	signal poly_unsigned 		: unsigned (31 downto 0);
+	signal poly_uns 				: unsigned (shift_reg_size downto 0);	
+	signal RESULT_local 			: STD_LOGIC_VECTOR (31 downto 0); 
+	
+	-- state machine
+	type state_type is ( 
+		S_START,
+		S_SHIFTING,
+		S_DIVIDING, 
+		S_DONE
+	);
+	
+	signal current_state		: state_type;
+	signal next_state			: state_type;
+
 
 begin
 
-	complete <= complete_local;
+	complete 	<= complete_local;
+	RESULT(30 downto 0)		<= STD_LOGIC_VECTOR(shift_reg(30 downto 0));
+	vword  		<= STD_LOGIC_VECTOR(to_unsigned(vword_int, 16));
 	
-	-- for debugging
-	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0));
+	poly_uns(31 downto 0)	<= unsigned(poly);
+	poly_uns(shift_reg_size downto 32) 	<= (others => '0');
+	
+	plen_int <= to_integer(unsigned(plen));
+	
+	-- for debugging	
+	
 --	RESULT(0) <= shift_change;
 --	RESULT(1) <= shift_change_last;
 --	RESULT(2) <= '1' when ((start = '0') and (enable = '1')) else '0';
@@ -73,10 +99,10 @@ begin
 	--------------------------------------------------
 	-- configures the width of the data if it changes
 	--------------------------------------------------
-	process(clk, dwidth_int)
+	process(clk)
 	variable dwidth_int_var: 	integer range 0 to 32;
 	begin
-		if(rising_edge(clk)) then
+		if(clk'event and clk='1') then
 		
 			if(dwidth /= dwidth_last) then
 				dwidth_last <= dwidth;
@@ -122,54 +148,147 @@ begin
 			end if;
 		end if;
 	end process;
-
+	
 	--------------------------------------------------
 	-- shift the data register over
 	--------------------------------------------------
-	process(clk)
+	process(reset, reset_shift, clk, shift_change, start, enable, shift_change_last)
 	
-	variable data_local		: unsigned (8191 downto 0);
+		variable shift_reg_local		: unsigned (shift_reg_size downto 0);
 	
-	begin
-		if(rising_edge(clk)) then 
+		begin
 		
-			if((reset = '1') or (reset_shift = '1')) then
-				data <= (others => '0'); 
-				pointer <= 0;
+		if(reset = '1' or reset_shift = '1') then
+			pointer <= 0;
+			shift_reg <= (others => '0');
+			vword_int <= 0;
+			
+		
+		elsif((clk'event) and (clk='1') and 
+			(start = '0') and (enable = '1') and 
+			(shift_change /= shift_change_last)) then
+			
+				RESULT(31) <= '1';
 				
-			else
-				if((start = '0') and (enable = '1')) then
-					if(shift_change /= shift_change_last) then
-						-- udpate shift_change_last and pointer
-						shift_change_last <= shift_change;
-						pointer <= pointer + dwidth_int;
-						
-						-- shift the old data to the left and OR in the new data
-						data_local := shift_left(data, dwidth_int);
-						data_local := data_local OR unsigned(SHIFT and data_mask);
-						
-						-- update the real data
-						data <= data_local;
-					end if;
-				end if;
-			end if;
+				-- update shift_change_last and pointer
+				shift_change_last <= shift_change;
+				pointer <= pointer + dwidth_int;				
+				vword_int <= vword_int +1;
+				
+				-- shift the old data to the left and OR in the new data
+				shift_reg_local := shift_left(shift_reg, dwidth_int);
+				shift_reg_local := shift_reg_local OR unsigned(SHIFT and data_mask);
+				
+				-- update the real data
+				shift_reg <= shift_reg_local;
+			
+			
 		end if;
-	end process;
-
-
-
-
-	--------------------------------------------------
-	-- start the calculation
-	--------------------------------------------------
-	process(clk)
-	begin
-		if(rising_edge(clk) and (start = '1') and (complete_local = '0') and (enable = '1')) then
 		
-		end if;
+	
+	end process;
+	
+
+	
+
+
+	--------------------------------------------------
+	-- STATE_MEMORY 
+	--------------------------------------------------
+	STATE_MEMORY : process(reset, reset_shift, clk, start, enable, complete_local)
+		begin
+			if(reset = '1' or reset_shift = '1') then
+				current_state 	<= S_START;
+				
+			elsif((clk'event) and (clk='1') and 
+					(start = '1') and (enable = '1') and (complete_local ='0')) then
+					
+						current_state <= next_state;
+			end if;
+			
+	end process;
+	
+	--------------------------------------------------
+	-- NEXT_STATE_LOGIC 
+	--------------------------------------------------
+	NEXT_STATE_LOGIC : process(current_state, data, complete_local, pointer_calc)
+		begin
+			case(current_state) is 
+			
+				when S_START =>
+					if(data(pointer_calc) = '1') then
+						next_state <= S_DIVIDING;							
+					else
+						next_state <= S_SHIFTING;							
+					end if;
+			
+				when S_SHIFTING =>
+					if(data(pointer_calc) = '1') then
+						next_state <= S_DIVIDING;							
+					else
+						next_state <= S_SHIFTING;							
+					end if;
+				
+				
+			
+				when S_DIVIDING =>
+					if(complete_local = '1') then
+						next_state <= S_DONE;
+					else
+						next_state <= S_SHIFTING;		
+					end if;
+				
+				when S_DONE =>
+					next_state <= S_DONE;
+					
+				when others =>
+					next_state <= S_START;
+						
+			end case;
+				
 	end process;	
 	
 	
+	--------------------------------------------------
+	-- OUTPUT_LOGIC 
+	--------------------------------------------------
+	OUTPUT_LOGIC : process(current_state)
+	
+		begin
+			
+			case(current_state) is 
+			
+				when S_START =>
+					-- latch and shift shift_reg into data, so that we have room for the remainder (RESULT)
+					pointer_calc <= pointer + dwidth_int;		
+					data <= shift_left(shift_reg, dwidth_int);
+			
+				when S_SHIFTING =>
+					-- decrement pointer to 'shift' the polynomial to the right					
+					pointer_calc <= pointer_calc -1;		
+
+					if(pointer_calc <= dwidth_int) then
+						complete_local <= '1';
+					end if;	
+					
+			
+				when S_DIVIDING =>		
+					-- XOR the polynomial with the data, aligning the MSB of the poly with data(pointer)
+					data <= data XOR (shift_left(poly_uns, (pointer_calc - plen_int)));
+				
+				when S_DONE =>
+					complete_local <= '1';
+					
+				when others => 
+						
+			end case;
+			
+	end process;
 
 end Behavioral;
 
+
+
+
+					
+						

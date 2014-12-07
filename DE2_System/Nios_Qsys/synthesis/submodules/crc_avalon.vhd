@@ -51,7 +51,7 @@ architecture behavior of crc_avalon is
 					reset_shift    : in  STD_LOGIC;		-- clears shift register
 					shift_change   : in  STD_LOGIC;     -- goes high when shift register changes
 					
-					vword   			: in STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the FIFO
+					vword   			: out STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the FIFO
 					dwidth  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Width of a data word
 					plen  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Polynomial width
 					poly 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Polynomial coefficients
@@ -187,7 +187,7 @@ begin
 						readdata(31 downto 0) := RESULT;		
 					end if;
 					
-				WHEN OTHERS =>  readdata := x"F000000F";
+				WHEN OTHERS =>  readdata := x"F000000F"; -- TODO: chanche back to 0x00...
 				
 			end CASE;
 			
