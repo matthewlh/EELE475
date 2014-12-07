@@ -32,12 +32,12 @@ int main(void)
 	{
 		*CRC_SHIFT = i;
 
-		printf("CRC_RESULT:  0x%08X,  Shifted: 0x%08X, VWORD: %d\n", *CRC_RESULT, *CRC_SHIFT, *CRC_VWORD);
+		printf("CRC_RESULT:  0x%08X,  Shifted:     0x%08X, VWORD: %d\n", *CRC_RESULT, *CRC_SHIFT, *CRC_VWORD);
 	}
 
 	printf("\n");
 
-	printf("CRC_CTRL:    0x%08X\n", *CRC_CTRL);
+	printf("CRC_CTRL:  0x%08X\n", *CRC_CTRL);
 	printf("CRC_RESULT:  0x%08X\n", *CRC_RESULT);
 
 	//while(1) {}

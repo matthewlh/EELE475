@@ -80,6 +80,7 @@ begin
 
 	complete 	<= complete_local;
 	RESULT(30 downto 0)		<= STD_LOGIC_VECTOR(shift_reg(30 downto 0));
+	RESULT(31) <= RESULT_local(31);
 	vword  		<= STD_LOGIC_VECTOR(to_unsigned(vword_int, 16));
 	
 	poly_uns(31 downto 0)	<= unsigned(poly);
@@ -161,14 +162,14 @@ begin
 		if(reset = '1' or reset_shift = '1') then
 			pointer <= 0;
 			shift_reg <= (others => '0');
-			vword_int <= 0;
+			--vword_int <= 0;
 			
 		
-		elsif((clk'event) and (clk='1') and 
+		elsif(rising_edge(clk) and 
 			(start = '0') and (enable = '1') and 
 			(shift_change /= shift_change_last)) then
 			
-				RESULT(31) <= '1';
+				RESULT_local(31) <= not RESULT_local(31);
 				
 				-- update shift_change_last and pointer
 				shift_change_last <= shift_change;
@@ -192,98 +193,104 @@ begin
 	
 
 
-	--------------------------------------------------
-	-- STATE_MEMORY 
-	--------------------------------------------------
-	STATE_MEMORY : process(reset, reset_shift, clk, start, enable, complete_local)
-		begin
-			if(reset = '1' or reset_shift = '1') then
-				current_state 	<= S_START;
-				
-			elsif((clk'event) and (clk='1') and 
-					(start = '1') and (enable = '1') and (complete_local ='0')) then
-					
-						current_state <= next_state;
-			end if;
-			
-	end process;
-	
-	--------------------------------------------------
-	-- NEXT_STATE_LOGIC 
-	--------------------------------------------------
-	NEXT_STATE_LOGIC : process(current_state, data, complete_local, pointer_calc)
-		begin
-			case(current_state) is 
-			
-				when S_START =>
-					if(data(pointer_calc) = '1') then
-						next_state <= S_DIVIDING;							
-					else
-						next_state <= S_SHIFTING;							
-					end if;
-			
-				when S_SHIFTING =>
-					if(data(pointer_calc) = '1') then
-						next_state <= S_DIVIDING;							
-					else
-						next_state <= S_SHIFTING;							
-					end if;
-				
-				
-			
-				when S_DIVIDING =>
-					if(complete_local = '1') then
-						next_state <= S_DONE;
-					else
-						next_state <= S_SHIFTING;		
-					end if;
-				
-				when S_DONE =>
-					next_state <= S_DONE;
-					
-				when others =>
-					next_state <= S_START;
-						
-			end case;
-				
-	end process;	
-	
-	
-	--------------------------------------------------
-	-- OUTPUT_LOGIC 
-	--------------------------------------------------
-	OUTPUT_LOGIC : process(current_state)
-	
-		begin
-			
-			case(current_state) is 
-			
-				when S_START =>
-					-- latch and shift shift_reg into data, so that we have room for the remainder (RESULT)
-					pointer_calc <= pointer + dwidth_int;		
-					data <= shift_left(shift_reg, dwidth_int);
-			
-				when S_SHIFTING =>
-					-- decrement pointer to 'shift' the polynomial to the right					
-					pointer_calc <= pointer_calc -1;		
-
-					if(pointer_calc <= dwidth_int) then
-						complete_local <= '1';
-					end if;	
-					
-			
-				when S_DIVIDING =>		
-					-- XOR the polynomial with the data, aligning the MSB of the poly with data(pointer)
-					data <= data XOR (shift_left(poly_uns, (pointer_calc - plen_int)));
-				
-				when S_DONE =>
-					complete_local <= '1';
-					
-				when others => 
-						
-			end case;
-			
-	end process;
+--	--------------------------------------------------
+--	-- STATE_MEMORY 
+--	--------------------------------------------------
+--	STATE_MEMORY : process(reset, reset_shift, clk, start, enable, complete_local)
+--		begin
+--			if(reset = '1' or reset_shift = '1') then
+--				current_state 	<= S_START;
+--				
+--			elsif((clk'event) and (clk='1') and 
+--					(start = '1') and (enable = '1') and (complete_local ='0')) then
+--					
+--						current_state <= next_state;
+--			end if;
+--			
+--	end process;
+--	
+--	--------------------------------------------------
+--	-- NEXT_STATE_LOGIC 
+--	--------------------------------------------------
+--	NEXT_STATE_LOGIC : process(current_state, data, complete_local, pointer_calc)
+--		begin
+--			case(current_state) is 
+--			
+--				when S_START =>
+--					if(data(pointer_calc) = '1') then
+--						next_state <= S_DIVIDING;							
+--					else
+--						next_state <= S_SHIFTING;							
+--					end if;
+--			
+--				when S_SHIFTING =>
+--					if(data(pointer_calc) = '1') then
+--						next_state <= S_DIVIDING;							
+--					else
+--						next_state <= S_SHIFTING;							
+--					end if;
+--				
+--				
+--			
+--				when S_DIVIDING =>
+--					if(complete_local = '1') then
+--						next_state <= S_DONE;
+--					else
+--						next_state <= S_SHIFTING;		
+--					end if;
+--				
+--				when S_DONE =>
+--					next_state <= S_DONE;
+--					
+--				when others =>
+--					next_state <= S_START;
+--						
+--			end case;
+--				
+--	end process;	
+--	
+--	
+--	--------------------------------------------------
+--	-- OUTPUT_LOGIC 
+--	--------------------------------------------------
+--	OUTPUT_LOGIC : process(current_state)
+--	
+--		begin
+--			
+--			case(current_state) is 
+--			
+--				when S_START =>
+--					-- latch and shift shift_reg into data, so that we have room for the remainder (RESULT)
+--					pointer_calc <= pointer + dwidth_int;		
+--					data <= shift_left(shift_reg, dwidth_int);
+--					
+--					complete_local <= '0';
+--			
+--				when S_SHIFTING =>
+--					-- decrement pointer to 'shift' the polynomial to the right					
+--					pointer_calc <= pointer_calc -1;		
+--
+--					if(pointer_calc <= dwidth_int) then
+--						complete_local <= '1';
+--					else						
+--						complete_local <= '0';
+--					end if;	
+--					
+--			
+--				when S_DIVIDING =>		
+--					-- XOR the polynomial with the data, aligning the MSB of the poly with data(pointer)
+--					data <= data XOR (shift_left(poly_uns, (pointer_calc - plen_int)));
+--					
+--					complete_local <= '0';
+--				
+--				when S_DONE =>
+--					complete_local <= '1';
+--					
+--				when others => 
+--						
+--			end case;
+--			
+--	end process;
 
 end Behavioral;
 
