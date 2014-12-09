@@ -17676,7 +17676,7 @@ int alt_get_fd (alt_dev* dev)
   80dd1c:	20000726 	beq	r4,zero,80dd3c <__call_exitprocs+0x1a0>
   80dd20:	b9000015 	stw	r4,0(r23)
   80dd24:	8809883a 	mov	r4,r17
-  80dd28:	00000000 	call	0 <__alt_mem_sdram_controller_0-0x800000>
+  80dd28:	00000000 	call	0 <__reset-0x800000>
   80dd2c:	bc400017 	ldw	r17,0(r23)
   80dd30:	883fb71e 	bne	r17,zero,80dc10 <__call_exitprocs+0x74>
   80dd34:	003fc506 	br	80dc4c <__call_exitprocs+0xb0>

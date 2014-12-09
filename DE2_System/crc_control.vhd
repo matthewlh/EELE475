@@ -20,7 +20,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.numeric_std.ALL;
+use IEEE.numeric_std.all;
 
 entity crc_control is
 	 Port (  clk            : in  STD_LOGIC;  	-- PWM timing is based on the number of clock cycles from clk
@@ -56,7 +56,7 @@ architecture Behavioral of crc_control is
 	signal vword_int 				: integer range 0 to 65535;
 	signal pointer					: integer range 0 to shift_reg_size;     			-- keep track of location in data 
 	signal plen_int				: integer range 0 to shift_reg_size;     			-- 
-	signal dwidth_int 			: integer range 0 to 31;               --
+	signal dwidth_int 			: integer range 0 to shift_reg_size;               --
 	signal data_mask  			: STD_LOGIC_VECTOR (31 downto 0);        --
 	signal shift_change_last 	: STD_LOGIC;
 	signal complete_local 		: STD_LOGIC;
@@ -188,7 +188,7 @@ begin
 					next_state <= S_SHIFTING;
 			
 				when S_SHIFTING =>
-					if(pointer <= dwidth_int) then
+					if(pointer < dwidth_int) then
 						next_state <= S_DONE;
 					elsif(data(pointer) = '1') then
 						next_state <= S_DIVIDING;							
