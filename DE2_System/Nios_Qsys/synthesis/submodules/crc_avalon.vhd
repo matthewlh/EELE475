@@ -110,10 +110,12 @@ begin
 					if wre='1' and re='0' then
 						enable 		<= avs_s1_writedata(0);
 						start 		<= avs_s1_writedata(1);
+						reset_shift <= avs_s1_writedata(2);
 					elsif wre='0' and re='1' then
 						readdata(0) 				:= enable;
 						readdata(1) 				:= start;
-						readdata(3 downto 2) 	:= (others => '0');
+						readdata(2) 				:= reset_shift;
+						readdata(3) 				:= '0';
 						readdata(4) 				:= fifo_empty;
 						readdata(5) 				:= fifo_full;
 						readdata(7 downto 6) 	:= (others => '0');
@@ -174,7 +176,14 @@ begin
 				WHEN x"21" =>
 					if wre='1' and re='0' then
 						SHIFT <= avs_s1_writedata(31 downto 0);
-						shift_change <= not shift_change;
+						
+						-- toggle shift_change
+						if(shift_change = '0') then
+							shift_change <= '1';
+						else
+							shift_change <= '0';
+						end if;
+						
 					elsif wre='0' and re='1' then
 						readdata(31 downto 0) := SHIFT;		
 					end if;
