@@ -42,7 +42,9 @@ entity crc_control is
 
 				--FIFO 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
 				SHIFT 			: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
-				RESULT 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- The CRC calculation result.
+				RESULT 			: out STD_LOGIC_VECTOR (31 downto 0); 	-- The CRC calculation result.
+				
+				DEBUG 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- reserved for debugging.
 	);
 end entity;
 
@@ -83,11 +85,14 @@ begin
 	vword  		<= STD_LOGIC_VECTOR(to_unsigned(vword_int, 16));
 	
 	complete <= complete_local;
-	RESULT(0)		<= shift_change;
-	RESULT(1)		<= shift_change_last;
-	RESULT(2)		<= reset;
 	
-	with current_state select RESULT(7 downto 4) <=
+	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0));
+	
+	DEBUG(0)		<= shift_change;
+	DEBUG(1)		<= shift_change_last;
+	DEBUG(2)		<= reset;
+	
+	with current_state select DEBUG(7 downto 4) <=
 		x"1" when S_RESET,
 		x"2" when S_DATA_INPUT,
 		x"3" when S_START_CALC,
@@ -96,7 +101,7 @@ begin
 		x"6" when S_DONE,
 		x"0" when others;
 		
-	with next_state select RESULT(11 downto 8) <=
+	with next_state select DEBUG(11 downto 8) <=
 		x"1" when S_RESET,
 		x"2" when S_DATA_INPUT,
 		x"3" when S_START_CALC,
@@ -148,13 +153,13 @@ begin
 	--------------------------------------------------
 	-- STATE_MEMORY 
 	--------------------------------------------------
-	STATE_MEMORY : process(reset, reset_shift, clk, start, enable, complete_local)
+	STATE_MEMORY : process(reset, reset_shift, clk, enable)
 		begin
 			if(reset = '1' or reset_shift = '1') then
 				current_state 	<= S_RESET;
 				
-			elsif((clk'event) and (clk='1') and (enable = '1')) then					
-						current_state <= next_state;
+			elsif((clk'event) and (clk='0') and (enable = '1')) then					
+				current_state <= next_state;
 			end if;
 			
 	end process;
@@ -230,6 +235,7 @@ begin
 						
 						-- update shift_change_last, pointer, and vword
 						shift_change_last <= shift_change;
+						
 						pointer <= pointer + dwidth_int;				
 						vword_int <= vword_int +1;
 						

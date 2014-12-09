@@ -32,7 +32,6 @@
 
 #define CRC_CTRL_MSK_EN				0x00000001	// read-write
 #define CRC_CTRL_MSK_START			0x00000002	// read-write
-#define CRC_CTRL_MSK_RESET			0x00000004	// read-write
 #define CRC_CTRL_MSK_FIFO_EMPTY		0x00000010	// read only
 #define CRC_CTRL_MSK_FIFO_FULL		0x00000020	// read only
 #define CRC_CTRL_MSK_COMPLETE		0x00000800	// read only

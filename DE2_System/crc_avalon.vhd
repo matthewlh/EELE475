@@ -58,7 +58,8 @@ architecture behavior of crc_avalon is
 
 					--FIFO 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
 					SHIFT 			: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
-					RESULT 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- The CRC calculation result.
+					RESULT 			: out STD_LOGIC_VECTOR (31 downto 0); 	-- The CRC calculation result.
+					DEBUG 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- reserved for debugging.
 		);
 	end component;
 
@@ -83,6 +84,7 @@ architecture behavior of crc_avalon is
 	--signal FIFO 				: STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
 	signal SHIFT 				: STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
 	signal RESULT 				: STD_LOGIC_VECTOR (31 downto 0); 	-- The CRC calculation result.
+	signal DEBUG 				: STD_LOGIC_VECTOR (31 downto 0); 	-- reserved for debugging.
 
 begin
 
@@ -195,6 +197,14 @@ begin
 					elsif wre='0' and re='1' then
 						readdata(31 downto 0) := RESULT;		
 					end if;
+			
+				-- Latch DEBUG word (address 3)
+				WHEN x"23" =>
+					if wre='1' and re='0' then
+						-- Writes ignored
+					elsif wre='0' and re='1' then
+						readdata(31 downto 0) := DEBUG;		
+					end if;
 					
 				WHEN OTHERS =>  readdata := x"F000000F"; -- TODO: chanche back to 0x00...
 				
@@ -229,7 +239,8 @@ begin
 
 				--FIFO 				=> FIFO,
 				SHIFT 			=> SHIFT,
-				RESULT 			=> RESULT
+				RESULT 			=> RESULT,
+				DEBUG 			=> DEBUG
 	);
 
 end behavior;
