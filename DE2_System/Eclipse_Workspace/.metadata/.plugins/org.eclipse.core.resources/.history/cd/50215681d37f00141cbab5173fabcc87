@@ -24,9 +24,6 @@ int main(void)
 	printf("CRC_PLEN:    0x%08X\n", *CRC_PLEN);
 	printf("CRC_POLY:    0x%08X\n", *CRC_POLY);
 
-
-	*CRC_SHIFT = 0x00000000;
-
 	printf("\n");
 
 	*CRC_CTRL |= CRC_CTRL_MSK_RESET;

@@ -110,8 +110,10 @@ begin
 		x"6" when S_DONE,
 		x"0" when others;
 		
-		
-	--RESULT		<= STD_LOGIC_VECTOR(data(31 downto 0));
+	DEBUG(15 downto 12) <= (others => '0');
+	DEBUG(23 downto 16) <= STD_LOGIC_VECTOR(to_unsigned(pointer, 8));
+	DEBUG(31 downto 24) <= (others => '0');
+	
 
 	with dwidth_int select data_mask <=
 		x"00000000" when 0, 
@@ -223,7 +225,7 @@ begin
 					data 					<= (others => '0');
 					pointer 				<= 0;
 					vword_int 			<= 0;				
-					shift_change_last <= '0';
+					shift_change_last <= shift_change;
 					complete_local 	<= '0';
 					
 					
@@ -247,7 +249,7 @@ begin
 					complete_local <= '0';
 					
 				when S_START_CALC =>
-					-- latch and shift shift_reg into data, so that we have room for the remainder (RESULT)
+					-- shift data, so that we have room for the remainder (RESULT)
 					pointer <= pointer + dwidth_int;		
 					data <= shift_left(data, dwidth_int);
 					
