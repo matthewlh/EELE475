@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\14.0
+Ecrc_control
+Z0 w1418169928
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dE:\475
+Z5 8E:/475/crc_control.vhd
+Z6 FE:/475/crc_control.vhd
+l0
+L26
+V<XCTiQz]DeVl>lzaHi38l1
+!s100 ^Q97FmX1TnQBB<F:_T]ON1
+Z7 OV;C;10.1e;51
+32
+!i10b 1
+Z8 !s108 1418169931.614000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/475/crc_control.vhd|
+Z10 !s107 E:/475/crc_control.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+DEx4 work 11 crc_control 0 22 <XCTiQz]DeVl>lzaHi38l1
+l78
+L51
+VCX`M^E52OEM:`OfCEjMe40
+!s100 H>NdAhEJa2DR4MfNWo5V63
+R7
+32
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Ecrc_tb
+Z13 w1418169889
+R2
+R3
+R4
+Z14 8E:\475\crc_TB.vhd
+Z15 FE:\475\crc_TB.vhd
+l0
+L19
+Ve6PRhm6CbDREJI9fg1>X;2
+R7
+32
+Z16 !s108 1418169931.002000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\475\crc_TB.vhd|
+Z18 !s107 E:\475\crc_TB.vhd|
+R11
+R12
+!s100 XS@4g86?P]c[SRlBC:dDK2
+!i10b 1
+Acrc_tb_arch
+R2
+R3
+DEx4 work 6 crc_tb 0 22 e6PRhm6CbDREJI9fg1>X;2
+l77
+L22
+VLFi2iU`iBPGFfdjaD4Ta`0
+!s100 bFIUBZ1VDNVagNfnof]n71
+R7
+32
+R16
+R17
+R18
+R11
+R12
+!i10b 1
