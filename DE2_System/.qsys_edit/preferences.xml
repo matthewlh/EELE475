@@ -11,13 +11,18 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="216" />
-   <clocksource preferredWidth="216" />
-   <frequency preferredWidth="216" />
+   <clockname preferredWidth="328" />
+   <clocksource preferredWidth="328" />
+   <frequency preferredWidth="328" />
   </columns>
  </clocktable>
  <library expandedCategories="Library,Project" />
- <window width="960" height="1040" x="960" y="0" />
+ <window width="1296" height="1040" x="-1288" y="48" />
  <hdlexample language="VHDL" />
- <generation synthesis="VHDL" path="_PROJECT_NAME_" />
+ <generation
+   synthesis="VHDL"
+   path="_PROJECT_NAME_"
+   testbench_system="NONE"
+   simulation="NONE"
+   testbench_simulation="VHDL" />
 </preferences>

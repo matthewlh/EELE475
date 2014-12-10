@@ -93,7 +93,7 @@ begin
 	
 	complete <= complete_local;
 	
-	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0));
+	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0)) AND data_mask;
 	
 	DEBUG(0)		<= shift_change;
 	DEBUG(1)		<= shift_change_last;

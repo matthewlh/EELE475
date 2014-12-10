@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dC:\Users\w92p177\Documents\GitHub\EELE475\ModelSim
 Ecrc_control
-Z1 w1418231810
+Z1 w1418232060
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -18,7 +18,7 @@ V<XCTiQz]DeVl>lzaHi38l1
 Z8 OV;C;10.1e;51
 32
 !i10b 1
-Z9 !s108 1418231827.535000
+Z9 !s108 1418232156.141000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_control.vhd|
 Z11 !s107 C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_control.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -30,8 +30,8 @@ R4
 Z14 DEx4 work 11 crc_control 0 22 <XCTiQz]DeVl>lzaHi38l1
 l82
 L51
-V8SmWCi`h?V:8D`ki8eKjm2
-!s100 QGX@k<aJA9SOK3<RF`3I`0
+Vj7IdciJM;X1@JRezQmfW61
+!s100 4_BS<b5IP5>cBQzi1kT@D2
 R8
 32
 !i10b 1

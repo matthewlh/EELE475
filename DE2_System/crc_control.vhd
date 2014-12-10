@@ -1,3 +1,4 @@
+
 ----------------------------------------------------------------------------------
 -- Company:          Montana State University
 -- Author/Engineer:	Matthew Handley
@@ -23,34 +24,33 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
 
 entity crc_control is
-	 Port (  clk            : in  STD_LOGIC;  	-- PWM timing is based on the number of clock cycles from clk
-				reset          : in  STD_LOGIC;  	-- reset 
-				
-				-- control register bits
-				enable			: in 	STD_LOGIC;		-- enable module
-				start				: in 	STD_LOGIC;		-- start calculation
-				fifo_empty		: out STD_LOGIC;		-- FIFO empty status flag
-				fifo_full		: out STD_LOGIC;		-- FIFO full status flag
-				complete			: out STD_LOGIC;		-- calculation complete
-				reset_shift    : in  STD_LOGIC;		-- clears shift register
-				shift_change   : in  STD_LOGIC;     -- goes high when shift register changes
-				
-				vword   			: out STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the shift register
-				dwidth  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Width of a data word
-				plen  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Polynomial width
-				poly 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Polynomial coefficients
+	 Port ( 		clk            : in  STD_LOGIC;  	-- PWM timing is based on the number of clock cycles from clk
+					reset          : in  STD_LOGIC;  	-- reset 
+					
+					-- control register bits
+					enable			: in 	STD_LOGIC;		-- enable module
+					start				: in 	STD_LOGIC;		-- start calculation
+					fifo_empty		: out STD_LOGIC;		-- FIFO empty status flag
+					fifo_full		: out STD_LOGIC;		-- FIFO full status flag
+					complete			: out STD_LOGIC;		-- calculation complete
+					reset_shift    : in  STD_LOGIC;		-- clears shift register
+					shift_change   : in  STD_LOGIC;     -- goes high when shift register changes
+					
+					vword   			: out STD_LOGIC_VECTOR (15 downto 0); 	-- Read only, Indicates the number of valid words in the FIFO
+					dwidth  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Width of a data word
+					plen  			: in STD_LOGIC_VECTOR ( 5 downto 0); 	-- Polynomial width
+					poly 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Polynomial coefficients
 
-				--FIFO 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
-				SHIFT 			: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
-				RESULT 			: out STD_LOGIC_VECTOR (31 downto 0); 	-- The CRC calculation result.
-				
-				DEBUG 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- reserved for debugging.
-	);
+					--FIFO 				: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes data to the FIFO
+					SHIFT 			: in STD_LOGIC_VECTOR (31 downto 0); 	-- Writes to the CRC shift register
+					RESULT 			: out STD_LOGIC_VECTOR (31 downto 0); 	-- The CRC calculation result.
+					DEBUG 			: out STD_LOGIC_VECTOR (31 downto 0) 	-- reserved for debugging.
+		);
 end entity;
 
 architecture Behavioral of crc_control is
 
-	constant shift_reg_size : integer := 256;	-- 32 bytes
+	constant shift_reg_size : integer := 128;	-- 16 bytes
 	
 	signal data 					: unsigned (shift_reg_size downto 0);		
 	signal vword_int 				: integer range 0 to 65535;
@@ -60,14 +60,19 @@ architecture Behavioral of crc_control is
 	signal data_mask  			: STD_LOGIC_VECTOR (31 downto 0);        --
 	signal shift_change_last 	: STD_LOGIC;
 	signal complete_local 		: STD_LOGIC;
-	signal poly_uns 				: unsigned (shift_reg_size downto 0);	
+	signal poly_uns 			: unsigned (shift_reg_size downto 0);	
+	
+	signal shift_uns 			: unsigned (shift_reg_size downto 0);	
 	
 	-- state machine
 	type state_type is ( 
+		S_RESET_WAIT,
 		S_RESET,
 		S_DATA_INPUT,
+		S_DATA_INPUT_WAIT,
 		S_START_CALC,
 		S_SHIFTING,
+		S_SHIFTING_WAIT,
 		S_DIVIDING, 
 		S_DONE
 	);	
@@ -76,6 +81,9 @@ architecture Behavioral of crc_control is
 
 
 begin
+
+	shift_uns(31 downto 0) <= unsigned(SHIFT and data_mask);
+	shift_uns(shift_reg_size downto 32) <= (others => '0');
 	
 	poly_uns(31 downto 0)	<= unsigned(poly);
 	poly_uns(shift_reg_size downto 32) 	<= (others => '0');
@@ -86,7 +94,7 @@ begin
 	
 	complete <= complete_local;
 	
-	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0));
+	RESULT <= STD_LOGIC_VECTOR(data(31 downto 0)) AND data_mask;
 	
 	DEBUG(0)		<= shift_change;
 	DEBUG(1)		<= shift_change_last;
@@ -158,7 +166,7 @@ begin
 	STATE_MEMORY : process(reset, reset_shift, clk, enable)
 		begin
 			if(reset = '1' or reset_shift = '1') then
-				current_state 	<= S_RESET;
+				current_state 	<= S_RESET_WAIT;
 				
 			elsif((clk'event) and (clk='0') and (enable = '1')) then					
 				current_state <= next_state;
@@ -173,6 +181,9 @@ begin
 		begin
 			case(current_state) is 
 			
+				when S_RESET_WAIT =>
+					next_state <= S_RESET;
+			
 				when S_RESET =>
 					next_state <= S_DATA_INPUT;
 			
@@ -180,8 +191,11 @@ begin
 					if(start = '1') then
 						next_state <= S_START_CALC;							
 					else
-						next_state <= S_DATA_INPUT;							
+						next_state <= S_DATA_INPUT_WAIT;							
 					end if;
+					
+				when S_DATA_INPUT_WAIT =>
+					next_state <= S_DATA_INPUT;	
 					
 					
 				when S_START_CALC =>
@@ -193,8 +207,11 @@ begin
 					elsif(data(pointer) = '1') then
 						next_state <= S_DIVIDING;							
 					else
-						next_state <= S_SHIFTING;							
+						next_state <= S_SHIFTING_WAIT;							
 					end if;
+					
+				when S_SHIFTING_WAIT =>
+					next_state <= S_SHIFTING;	
 			
 				when S_DIVIDING =>
 					next_state <= S_SHIFTING;
@@ -224,10 +241,9 @@ begin
 					-- reset signals for a new calculation
 					data 					<= (others => '0');
 					pointer 				<= 0;
-					vword_int 			<= 0;				
-					shift_change_last <= shift_change;
+					vword_int 			<= 0;			
 					complete_local 	<= '0';
-					
+					shift_change_last <= shift_change;
 					
 				when S_DATA_INPUT =>
 				
@@ -242,7 +258,7 @@ begin
 						vword_int <= vword_int +1;
 						
 						-- shift the old data to the left and OR in the new data
-						data <= shift_left(data, dwidth_int) OR unsigned(SHIFT and data_mask);					
+						data <= shift_left(data, dwidth_int) OR shift_uns;					
 					
 					end if;
 					
@@ -263,7 +279,7 @@ begin
 			
 				when S_DIVIDING =>		
 					-- XOR the polynomial with the data, aligning the MSB of the poly with data(pointer)
-					data <= data XOR (shift_left(poly_uns, (pointer - plen_int)));
+					data <= data XOR (shift_left(poly_uns, (pointer - plen_int +1)));
 					
 					complete_local <= '0';
 				
@@ -278,9 +294,3 @@ begin
 	end process;
 
 end Behavioral;
-
-
-
-
-					
-						

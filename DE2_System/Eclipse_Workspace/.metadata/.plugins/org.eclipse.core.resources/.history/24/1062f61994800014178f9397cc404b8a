@@ -14,18 +14,9 @@ int main(void)
 	int i;
 
 	/* reset CRC module */
-	*CRC_CTRL = CRC_CTRL_MSK_RESET;
-
-	printf("CRC_CTRL:    0x%08X, CRC_RESULT:  0x%08X,  Shifted: 0x%08X, VWORD: 0x%08X, CRC_DEBUG:  0x%08X\n",
-			*CRC_CTRL, *CRC_RESULT, *CRC_SHIFT, *CRC_VWORD, *CRC_DEBUG);
-
+	*CRC_CTRL |= CRC_CTRL_MSK_RESET;
 	*CRC_CTRL &= ~CRC_CTRL_MSK_RESET;
 
-	printf("CRC_CTRL:    0x%08X, CRC_RESULT:  0x%08X,  Shifted: 0x%08X, VWORD: 0x%08X, CRC_DEBUG:  0x%08X\n",
-			*CRC_CTRL, *CRC_RESULT, *CRC_SHIFT, *CRC_VWORD, *CRC_DEBUG);
-
-
-	*CRC_SHIFT = 0x0;
 
 	/* init CRC registers */
 	*CRC_CTRL = CRC_CTRL_MSK_EN;	// set enable bit

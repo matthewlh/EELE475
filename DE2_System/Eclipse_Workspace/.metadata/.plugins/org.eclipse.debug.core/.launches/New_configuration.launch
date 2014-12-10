@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="com.altera.sbtgui.launch.modelsim2.Nios2ModelsimLaunchConfiguration">
-<stringAttribute key="modelsimLaunchConfigurationModelElfFileProperty" value=""/>
-<stringAttribute key="modelsimLaunchConfigurationModelModelsimPathProperty" value=""/>
-<stringAttribute key="modelsimLaunchConfigurationModelProjectProperty" value=""/>
-<stringAttribute key="modelsimLaunchConfigurationModelSpdFileProperty" value=""/>
-<booleanAttribute key="modelsimLaunchConfigurationModelUseDefaultProperty" value="true"/>
-</launchConfiguration>
