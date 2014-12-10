@@ -2,76 +2,76 @@ m255
 K3
 13
 cModel Technology
-dC:\altera\14.0
+Z0 dC:\Users\w92p177\Documents\GitHub\EELE475\ModelSim
 Ecrc_control
-Z0 w1418169928
-Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z4 dE:\475
-Z5 8E:/475/crc_control.vhd
-Z6 FE:/475/crc_control.vhd
+Z1 w1418231810
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\w92p177\Documents\GitHub\EELE475\ModelSim
+Z6 8C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_control.vhd
+Z7 FC:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_control.vhd
 l0
 L26
 V<XCTiQz]DeVl>lzaHi38l1
 !s100 ^Q97FmX1TnQBB<F:_T]ON1
-Z7 OV;C;10.1e;51
+Z8 OV;C;10.1e;51
 32
 !i10b 1
-Z8 !s108 1418169931.614000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/475/crc_control.vhd|
-Z10 !s107 E:/475/crc_control.vhd|
-Z11 o-work work -2002 -explicit -O0
-Z12 tExplicit 1
+Z9 !s108 1418231827.535000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_control.vhd|
+Z11 !s107 C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_control.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
 Abehavioral
-R1
 R2
 R3
-DEx4 work 11 crc_control 0 22 <XCTiQz]DeVl>lzaHi38l1
-l78
+R4
+Z14 DEx4 work 11 crc_control 0 22 <XCTiQz]DeVl>lzaHi38l1
+l82
 L51
-VCX`M^E52OEM:`OfCEjMe40
-!s100 H>NdAhEJa2DR4MfNWo5V63
-R7
+V8SmWCi`h?V:8D`ki8eKjm2
+!s100 QGX@k<aJA9SOK3<RF`3I`0
+R8
 32
 !i10b 1
-R8
 R9
 R10
 R11
 R12
+R13
 Ecrc_tb
-Z13 w1418169889
-R2
+Z15 w1418231318
 R3
 R4
-Z14 8E:\475\crc_TB.vhd
-Z15 FE:\475\crc_TB.vhd
+R5
+Z16 8C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_TB.vhd
+Z17 FC:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_TB.vhd
 l0
 L19
 Ve6PRhm6CbDREJI9fg1>X;2
-R7
+R8
 32
-Z16 !s108 1418169931.002000
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\475\crc_TB.vhd|
-Z18 !s107 E:\475\crc_TB.vhd|
-R11
+Z18 !s108 1418231361.761000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_TB.vhd|
+Z20 !s107 C:/Users/w92p177/Documents/GitHub/EELE475/ModelSim/crc_TB.vhd|
 R12
+R13
 !s100 XS@4g86?P]c[SRlBC:dDK2
 !i10b 1
 Acrc_tb_arch
-R2
 R3
+R4
 DEx4 work 6 crc_tb 0 22 e6PRhm6CbDREJI9fg1>X;2
 l77
 L22
-VLFi2iU`iBPGFfdjaD4Ta`0
-!s100 bFIUBZ1VDNVagNfnof]n71
-R7
+V?ND2GfDoL4TPQkU6J4B1=2
+R8
 32
-R16
-R17
 R18
-R11
+R19
+R20
 R12
+R13
+!s100 6hTSz<FfUJW=9F_18f5DO0
 !i10b 1

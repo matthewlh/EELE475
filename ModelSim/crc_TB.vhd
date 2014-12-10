@@ -100,7 +100,7 @@ architecture crc_TB_arch of crc_TB is
 -----------------------------------------------
       HEADER : process
         begin
-            report "uCat Microcomputer System Test Bench Initiating..." severity NOTE;
+            report "CRC System Test Bench Initiating..." severity NOTE;
             wait;
         end process;
 -----------------------------------------------
@@ -119,41 +119,43 @@ architecture crc_TB_arch of crc_TB is
 
       PORT_STIM : process
        begin
-      enable_TB <= '1';
+			
+			shift_change_TB <= '0';
+			start_TB <= '0';
+			reset_shift_TB <= '0';
+			
+			reset_TB <= '1'; wait for 10 ns;
+			reset_shift_TB <= '1';
 		  
-		  reset_TB <= '1'; wait for 10 ns;
-		   
+			reset_TB <= '0'; wait for 100 ns;
+			reset_shift_TB <= '0';
 		  
-		  reset_TB <= '0'; wait for 100 ns;
-		  
-		  
-		  
-		  
-		  
-		  dwidth_TB <= x"04";
-		  plen_TB 	<=  x"04";
-		  poly_TB   <= x"0000000A";
-		  wait for 100 ns;
+			enable_TB <= '1';
 		  
 		  
-		  SHIFT_TB <= x"00000000"; 
-		  shift_change_TB <= '1';
+		  
+		  
+			dwidth_TB <= x"04";
+			plen_TB 	<=  x"04";
+			poly_TB   <= x"0000000B";
+			--wait for 100 ns;
+		  
+		  
+			SHIFT_TB <= x"00000003"; 
+			shift_change_TB <= '1';
+			wait for 100 ns;
+		 
+			SHIFT_TB <= x"00000004"; 
+			shift_change_TB <= '0';
 			wait for 100 ns;
 		  
-		  SHIFT_TB <= x"0000000B"; 
-		  shift_change_TB <= '0';
-		  wait for 100 ns;
-		  
-		  SHIFT_TB <= x"0000000E";  
-      shift_change_TB <= '1';	wait for 100 ns;	   
+			SHIFT_TB <= x"0000000E";  
+			shift_change_TB <= '1';	wait for 100 ns;	   
           
-		  SHIFT_TB <= x"00000004"; 
-      shift_change_TB <= '0'; wait for 100 ns;		  
-		  
-		  SHIFT_TB <= x"00000003"; 
-      shift_change_TB <= '1'; wait for 100 ns;
+			SHIFT_TB <= x"0000000C"; 
+			shift_change_TB <= '0'; wait for 100 ns;		  
       		  
-		  start_TB <= '1';
+			start_TB <= '1';
 
 		  wait;
        end process;
